@@ -16,3 +16,9 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) |
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) |
+| 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) |
+| 015 | [3Sum](https://leetcode.com/problems/3sum) |
+| 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) |
+| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |
+| 018 | [4Sum](https://leetcode.com/problems/4sum) |
+| 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) |
