@@ -22,3 +22,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) |
 | 018 | [4Sum](https://leetcode.com/problems/4sum) |
 | 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) |
+| 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) |
+| 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) |
+| 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) |
+| 023 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) |

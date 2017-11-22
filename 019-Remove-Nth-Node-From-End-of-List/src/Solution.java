@@ -11,13 +11,32 @@ public class Solution {
      * @return
      */
     public ListNode removeNthFromEnd(ListNode head, int n) {
+        if (head == null) return null;
+        if (n == 0) return head;
         ListNode phead = new ListNode(0);
         phead.next = head;
         ListNode slow = phead, fast = phead;
         for (int i = 0; i < n; i++) {
             fast = fast.next;
-            // TODO
+            if (fast == null) return head.next;
         }
+        while (fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+        // 删除slow.next
+        slow.next = slow.next.next;
         return phead.next;
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution();
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 0)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 1)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 2)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 3)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 4)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 5)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 6)));
     }
 }
