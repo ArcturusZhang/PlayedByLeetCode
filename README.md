@@ -26,3 +26,10 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) |
 | 023 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) |
+| 024 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) |
+| 025 | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/description/) |
+| 026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) |
+| 027 | [Remove Element](https://leetcode.com/problems/remove-element) |
+| 028 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) |
+<!-- | 029 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | -->
+<!-- | 030 | -->
