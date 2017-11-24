@@ -1,7 +1,7 @@
 import arcturus.util.*;
 public class Solution {
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/</url>
      * 删除一个单向链表中的倒数第k个节点。
      * 解：
      * 对于这种问题一般都是利用“双指针法”，来一次找到需要的位置。有快慢两个指针，慢指针指向开头，快指针则指向慢指针之后的第k个节点，然后让两个指针

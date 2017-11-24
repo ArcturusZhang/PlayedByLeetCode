@@ -5,7 +5,7 @@ public class Solution {
     private static String[] phone = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/letter-combinations-of-a-phone-number/description/</url>
      * 解：
      * 这题目有很多做法，我这个做法应该算是比较低效的，因为产生了很多无用的列表对象。
      * 如果将产生新列表的做法改为队列，应该会在空间上节约一些。

@@ -1,6 +1,6 @@
 public class Solution {
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/container-with-most-water/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/container-with-most-water/description/</url>
      * 解：
      * 贪心算法。从数组的两侧开始，计算当前的面积，由于面积是由较短的板决定，因此将两侧较短的那一侧向内部推进。
      * 如果将较高的那一侧推进则面积必然减小（因为高度不可能增加，而宽度又减小了）。扫描至左右指针汇合，其中记录过的最大值即为所求。

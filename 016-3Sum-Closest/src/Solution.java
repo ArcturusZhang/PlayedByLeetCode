@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Solution {
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/3sum-closest/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/3sum-closest/description/</url>
      * 解：
      * 与3Sum类似的方法，只不过是再额外维护一个记录最小差别和最接近的和的变量即可
      * @param nums

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Solution {
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/</url>
      * 本题十分简单。。
      * @param nums
      * @return

@@ -1,6 +1,13 @@
 import java.util.*;
 
 public class Solution {
+    /**
+     * 题目描述：
+     * 给定一个数组和一个目标（整数），求出数组中所有能够满足四个不同元素之和等于目标整数的结果。
+     * @param nums
+     * @param target
+     * @return
+     */
     public List<List<Integer>> fourSum(int[] nums, int target) {
         Set<List<Integer>> set = new HashSet<>();
         if (nums == null || nums.length < 4) return new ArrayList<>(set);

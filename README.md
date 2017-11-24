@@ -31,5 +31,11 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 026 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/) |
 | 027 | [Remove Element](https://leetcode.com/problems/remove-element) |
 | 028 | [Implement strStr()](https://leetcode.com/problems/implement-strstr/description/) |
-<!-- | 029 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) | -->
-<!-- | 030 | -->
+| 029 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/description/) |
+| 030 | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/description/) |
+| 031 | [Next Permutation](https://leetcode.com/problems/next-permutation/description/) |
+| 032 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/description/) |
+| 033 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) |
+| 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) |
+| 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) |
+| 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) |

@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class Solution {
     /**
-     * 题目描述：<@url>https://leetcode.com/problems/reverse-nodes-in-k-group/description/</@url>
+     * 题目描述：<url>https://leetcode.com/problems/reverse-nodes-in-k-group/description/</url>
      * 解：
      * 基本上与024如出一辙，但是对于不足K个的结尾需要特殊处理，这部分不翻转
      * @param head

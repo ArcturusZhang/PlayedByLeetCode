@@ -10,7 +10,7 @@ public class Solution {
      *    dp(i,j) = dp(i+1, j-1) && (s[i] == s[j])
      * 即如果i+1到j-1不是回文，则i到j必然不是；如果i+1到j-1是回文，则需要i字符和j字符相等，i到j才是回文。
      * 据此关系可以得到状态表格，再从表格右上角(0,n-1)处开始逐个查看，查到第一个为true的dp(i, j)，即可返回
-     * <@code>s.substring(i, j + 1)</@code>
+     * {@code s.substring(i, j + 1)}
      * @param s
      * @return
      */
