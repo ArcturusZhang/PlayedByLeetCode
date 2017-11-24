@@ -39,3 +39,5 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) |
 | 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) |
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) |
+| 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) |
+| 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) |
