@@ -41,3 +41,5 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) |
 | 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) |
 | 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) |
+| 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) |
+| 046 | [Permutations](https://leetcode.com/problems/permutations/description/) |
