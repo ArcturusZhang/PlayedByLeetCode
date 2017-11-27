@@ -39,7 +39,12 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) |
 | 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) |
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) |
-| 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver) |
+| 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) |
 | 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) |
+| 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) |
+| 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) |
 | 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) |
 | 046 | [Permutations](https://leetcode.com/problems/permutations/description/) |
+| 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) |
+| 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) |
+| 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) |
