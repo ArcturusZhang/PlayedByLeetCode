@@ -48,3 +48,5 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) |
 | 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) |
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) |
+| 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) |
+| 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) |
