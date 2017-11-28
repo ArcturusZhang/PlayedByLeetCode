@@ -39,7 +39,10 @@ public class Solution1 {
 
     public static void main(String[] args) {
         Solution1 solution1 = new Solution1();
-        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parseListNode("[1, 2, 3, 4]"))));
-        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parseListNode("[1, 2, 3, 4, 5]"))));
+        Solution2 solution2 = new Solution2();
+        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parse("[1, 2, 3, 4]"))));
+        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parse("[1, 2, 3, 4, 5]"))));
+        System.out.println(ListNode.toString(solution2.swapPairs(ListNode.parse("[1, 2, 3, 4]"))));
+        System.out.println(ListNode.toString(solution2.swapPairs(ListNode.parse("[1, 2, 3, 4, 5]"))));
     }
 }

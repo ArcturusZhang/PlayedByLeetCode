@@ -7,7 +7,7 @@ public class ListNode {
         this.val = val;
     }
 
-    public static ListNode parseListNode(String string) {
+    public static ListNode parse(String string) {
         String[] nums = string.replace("[", "").replace("]", "").split(",");
         ListNode phead = new ListNode(0);
         ListNode last = phead;

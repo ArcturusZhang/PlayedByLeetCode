@@ -31,12 +31,12 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 0)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 1)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 2)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 3)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 4)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 5)));
-        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parseListNode("[1, 2, 3, 4, 5]"), 6)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 0)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 1)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 2)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 3)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 4)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 5)));
+        System.out.println(ListNode.toString(solution.removeNthFromEnd(ListNode.parse("[1, 2, 3, 4, 5]"), 6)));
     }
 }

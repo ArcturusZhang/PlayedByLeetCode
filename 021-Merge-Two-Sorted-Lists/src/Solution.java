@@ -33,8 +33,8 @@ public class Solution {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        ListNode l1 = ListNode.parseListNode("[1,3,5,6]");
-        ListNode l2 = ListNode.parseListNode("[0,2,90]");
+        ListNode l1 = ListNode.parse("[1,3,5,6]");
+        ListNode l2 = ListNode.parse("[0,2,90]");
         System.out.println(ListNode.toString(solution.mergeTwoLists(l1, l2)));
     }
 }

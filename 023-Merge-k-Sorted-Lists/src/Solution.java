@@ -35,8 +35,8 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         ListNode[] lists = new ListNode[2];
-        lists[0] = ListNode.parseListNode("[4, 7, 10, 92]");
-        lists[1] = ListNode.parseListNode("[1, 2, 9, 37, 82, 100]");
+        lists[0] = ListNode.parse("[4, 7, 10, 92]");
+        lists[1] = ListNode.parse("[1, 2, 9, 37, 82, 100]");
         System.out.println(ListNode.toString(solution.mergeKLists(lists)));
     }
 }
