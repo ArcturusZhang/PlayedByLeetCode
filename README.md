@@ -50,3 +50,6 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) |
 | 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) |
 | 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) |
+| 057 | [Insert Interval](https://leetcode.com/problems/insert-interval/description/) |
+| 077 | [Combinations](https://leetcode.com/problems/combinations/description/) |
+| 078 | [Subsets](https://leetcode.com/problems/subsets/description/) |
