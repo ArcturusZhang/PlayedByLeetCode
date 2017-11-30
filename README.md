@@ -7,7 +7,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | ID | Problem | Algorithm Used |
 | --- | :--- | :--- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | Brutal Force, Hash Table |
-| 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Brutal Force |
+| 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Integer Addition |
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Double Pointers |
 | 004 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | Brutal Force (Direct Merge Sort) |
 | 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Dynamic Programming |
@@ -49,7 +49,20 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Hash Table |
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) | Backtracing (DFS) |
 | 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) | Backtracing (DFS) |
+| 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | Dynamic Programming |
 | 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | Brutal Force |
 | 057 | [Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Brutal Force |
+| 058 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/) | Brutal Force |
+| 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) | Brutal Force (Reuse 031) |
+| 062 | [Unique Paths](https://leetcode.com/problems/unique-paths/description/) | Dynamic Programming |
+| 063 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | Dynamic Programming |
+| 064 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | Dynamic Programming |
+| 065 | [Valid Number](https://leetcode.com/problems/valid-number/description/) | Brutal Force |
+| 066 | [Plus One](https://leetcode.com/problems/plus-one/description/) | Integer Addition |
+| 067 | [Add Binary](https://leetcode.com/problems/add-binary/description/) | Binary Integer Addition |
+| 068 | [Text Justification](https://leetcode.com/problems/text-justification/description/) | Brutal Force |
+| 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/description/) | Brutal Force, Newton Method |
+| 070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Dynamic Programming (Fibonacci) |
+| 071 | [Simplify Path](https://leetcode.com/problems/simplify-path/description/) | Stack |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracing (DFS) |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracing (DFS) |
