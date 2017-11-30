@@ -4,7 +4,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 
 ## Problems
 
-| ID | Problem | Method Used |
+| ID | Problem | Algorithm Used |
 | --- | :--- | :--- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | Brutal Force, Hash Table |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Brutal Force |
