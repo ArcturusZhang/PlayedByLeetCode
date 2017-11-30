@@ -64,5 +64,6 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 069 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/description/) | Brutal Force, Newton Method |
 | 070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Dynamic Programming (Fibonacci) |
 | 071 | [Simplify Path](https://leetcode.com/problems/simplify-path/description/) | Stack |
+| 073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) | Brutal Force |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracing (DFS) |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracing (DFS) |
