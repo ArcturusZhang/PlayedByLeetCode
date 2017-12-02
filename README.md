@@ -65,5 +65,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Dynamic Programming (Fibonacci) |
 | 071 | [Simplify Path](https://leetcode.com/problems/simplify-path/description/) | Stack |
 | 073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) | Brutal Force |
+| 074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Binary Search |
+| 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/discuss/) | Hash Table |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracing (DFS) |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracing (DFS) |
