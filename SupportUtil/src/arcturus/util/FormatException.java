@@ -9,6 +9,10 @@ public class FormatException extends RuntimeException {
         super(msg);
     }
 
+    public FormatException(Exception cause) {
+        super(cause);
+    }
+
     public FormatException(String msg, Exception cause) {
         super(msg, cause);
     }

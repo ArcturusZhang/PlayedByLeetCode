@@ -16,6 +16,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Brutal Force |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Brutal Force (Reverse Half) |
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Greedy |
+| 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) | Brutal Force |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Brutal Force, Divide and Conquer (Not Implemented) |
 | 015 | [3Sum](https://leetcode.com/problems/3sum) | Binary Search |
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Binary Search |
@@ -69,3 +70,5 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/discuss/) | Hash Table |
 | 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracing (DFS) |
 | 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracing (DFS) |
+| 079 | [Word Search](https://leetcode.com/problems/word-search/description/) | Backtracing (DFS) |
+| 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
