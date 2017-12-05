@@ -16,6 +16,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Brutal Force |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Brutal Force (Reverse Half) |
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Greedy |
+| 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) | Brutal Force |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) | Brutal Force |
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Brutal Force, Divide and Conquer (Not Implemented) |
 | 015 | [3Sum](https://leetcode.com/problems/3sum) | Binary Search |
