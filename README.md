@@ -21,7 +21,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 014 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Brutal Force, Divide and Conquer (Not Implemented) |
 | 015 | [3Sum](https://leetcode.com/problems/3sum) | Binary Search |
 | 016 | [3Sum Closest](https://leetcode.com/problems/3sum-closest) | Binary Search |
-| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | Backtracing (DFS) |
+| 017 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | Backtracking (DFS) |
 | 018 | [4Sum](https://leetcode.com/problems/4sum) | Binary Search |
 | 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Double Pointers |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Stack |
@@ -41,16 +41,16 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 034 | [Search for a Range](https://leetcode.com/problems/search-for-a-range/description/) | Binary Search |
 | 035 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/description/) | Brutal Force, Binary Search |
 | 036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/description/) | Brutal Force, Hash Table |
-| 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | Backtracing (DFS) |
+| 037 | [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/description/) | Backtracking (DFS) |
 | 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) | Brutal Force |
-| 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | Backtracing (DFS) |
-| 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | Backtracing (DFS) |
+| 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | Backtracking (DFS) |
+| 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | Backtracking (DFS) |
 | 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | Integer Long Multiplication |
-| 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | Backtracing (DFS) |
-| 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Backtracing (DFS) |
+| 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | Backtracking (DFS) |
+| 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Backtracking (DFS) |
 | 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Hash Table |
-| 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) | Backtracing (DFS) |
-| 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) | Backtracing (DFS) |
+| 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) | Backtracking (DFS) |
+| 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) | Backtracking (DFS) |
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | Dynamic Programming |
 | 056 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/description/) | Brutal Force |
 | 057 | [Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Brutal Force |
@@ -71,9 +71,9 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Binary Search |
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/discuss/) | Hash Table |
 | 076 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hash Table |
-| 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracing (DFS) |
-| 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracing (DFS) |
-| 079 | [Word Search](https://leetcode.com/problems/word-search/description/) | Backtracing (DFS) |
+| 077 | [Combinations](https://leetcode.com/problems/combinations/description/) | Backtracking (DFS) |
+| 078 | [Subsets](https://leetcode.com/problems/subsets/description/) | Backtracking (DFS) |
+| 079 | [Word Search](https://leetcode.com/problems/word-search/description/) | Backtracking (DFS) |
 | 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) | Linked List |
 | 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Linked List |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
