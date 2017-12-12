@@ -9,7 +9,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | Brutal Force, Hash Table |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Integer Addition |
 | 003 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/description/) | Double Pointers |
-| 004 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | Brutal Force (Direct Merge Sort) |
+| 004 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/description/) | Merge Sort |
 | 005 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Dynamic Programming |
 | 006 | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion) | Brutal Force |
 | 007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Brutal Force |
@@ -25,7 +25,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 018 | [4Sum](https://leetcode.com/problems/4sum) | Binary Search |
 | 019 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/) | Double Pointers |
 | 020 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Stack |
-| 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Brutal Force (Direct Merge Sort) |
+| 021 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Merge Sort |
 | 022 | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Dynamic Programming |
 | 023 | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists) | Merge Sort (Using Priority Queue) |
 | 024 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/description/) | Double Pointers, Stack |
@@ -48,7 +48,9 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | Integer Long Multiplication |
 | 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | Backtracking (DFS) |
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Backtracking (DFS) |
+| 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/description/) | Brutal Force |
 | 049 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/description/) | Hash Table |
+| 050 | [Pow(x, n)](https://leetcode.com/problems/powx-n/description/) | Divide and Conquer |
 | 051 | [N-Queens](https://leetcode.com/problems/n-queens/description/) | Backtracking (DFS) |
 | 052 | [N-Queens-II](https://leetcode.com/problems/n-queens-ii/description/) | Backtracking (DFS) |
 | 053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/) | Dynamic Programming |
@@ -77,4 +79,6 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 080 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/) | Brutal Force |
 | 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) | Linked List |
 | 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Linked List |
+| 085 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/) | Dynamic Programming |
+| 086 | [Partition List](https://leetcode.com/problems/partition-list/description/) | Brutal Force |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
