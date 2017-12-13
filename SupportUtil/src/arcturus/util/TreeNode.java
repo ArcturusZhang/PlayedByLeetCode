@@ -53,7 +53,7 @@ public class TreeNode {
                 if (!nodeStrings[i].equals(nullString)) {
                     node1 = new TreeNode(Integer.valueOf(nodeStrings[i]));
                 }
-                if (!nodeStrings[i + 1].equals(nullString)) {
+                if (i + 1 < nodeStrings.length && !nodeStrings[i + 1].equals(nullString)) {
                     node2 = new TreeNode(Integer.valueOf(nodeStrings[i + 1]));
                 }
                 TreeNode preNode = queue.poll();

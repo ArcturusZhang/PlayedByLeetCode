@@ -83,4 +83,8 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 086 | [Partition List](https://leetcode.com/problems/partition-list/description/) | Brutal Force |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/description/) | Bit Manipulation, Brutal Force |
 | 090 | [Subsets II](https://leetcode.com/problems/subsets-ii/description/) | Backtracking (DFS) |
+| 091 | [Decode Ways](https://leetcode.com/problems/decode-ways/description/) | Backtracking, Dynamic Programming |
+| 092 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | Stack |
+| 093 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) | Backtracking (DFS) |
+| 094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Binary Tree |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
