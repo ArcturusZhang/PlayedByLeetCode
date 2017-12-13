@@ -1,6 +1,7 @@
 package arcturus.util;
 
 public class Interval {
+    private static final String separator = ", ";
     public int start;
     public int end;
 
@@ -11,11 +12,15 @@ public class Interval {
 
     @Override
     public String toString() {
-        return "[" + start + ", " + end + ']';
+        return "[" + start + separator + end + ']';
     }
 
-    public static Interval parse(String string) {
-        String[] nums = string.replace("[", "").replace("]", "").split(",");
+    public static Interval parse(String data) {
+        return parse(data, separator);
+    }
+
+    public static Interval parse(String data, String separator) {
+        String[] nums = data.replace("[", "").replace("]", "").split(separator);
         if (nums.length != 2) throw new FormatException();
         return new Interval(Integer.valueOf(nums[0].trim()), Integer.valueOf(nums[1].trim()));
     }

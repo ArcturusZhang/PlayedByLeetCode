@@ -41,8 +41,15 @@ public class TreeNode {
     }
 
     public static TreeNode parse(String data) {
-        data = data.replace("[", "").replace("]", "");
-        String[] nodeStrings = data.split(separator);
+        return parse(data, separator, nullString);
+    }
+
+    public static TreeNode parse(String data, String separator) {
+        return parse(data, separator, nullString);
+    }
+
+    public static TreeNode parse(String data, String separator, String nullString) {
+        String[] nodeStrings = data.replace("[", "").replace("]", "").split(separator);
         TreeNode root = null;
         try {
             if (!nodeStrings[0].equals(nullString)) root = new TreeNode(Integer.valueOf(nodeStrings[0]));
