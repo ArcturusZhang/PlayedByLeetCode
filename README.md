@@ -90,4 +90,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 098 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Binary Tree Traversal |
 | 099 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/description/) | Binary Tree Traversal |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/description/) | Binary Tree |
+| 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | Binary Tree |
+| 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Binary Tree Traversal |
+| 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Binary Tree Traversal |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |

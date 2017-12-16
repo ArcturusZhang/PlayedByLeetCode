@@ -1,7 +1,7 @@
 package arcturus.util;
 
 public class Interval {
-    private static final String separator = ", ";
+    public static final String SEPARATOR = ", ";
     public int start;
     public int end;
 
@@ -12,11 +12,11 @@ public class Interval {
 
     @Override
     public String toString() {
-        return "[" + start + separator + end + ']';
+        return "[" + start + SEPARATOR + end + ']';
     }
 
     public static Interval parse(String data) {
-        return parse(data, separator);
+        return parse(data, SEPARATOR);
     }
 
     public static Interval parse(String data, String separator) {

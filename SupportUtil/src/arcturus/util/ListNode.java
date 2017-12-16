@@ -1,7 +1,7 @@
 package arcturus.util;
 
 public class ListNode {
-    private static final String separator = ", ";
+    public static final String SEPARATOR = ", ";
     public int val;
     public ListNode next;
     public ListNode(int val) {
@@ -9,7 +9,7 @@ public class ListNode {
     }
 
     public static ListNode parse(String data) {
-        return parse(data, separator);
+        return parse(data, SEPARATOR);
     }
 
     public static ListNode parse(String data, String seperator) {
@@ -32,7 +32,7 @@ public class ListNode {
         sb.append("[");
         while (node != null) {
             sb.append(node.val);
-            if (node.next != null) sb.append(separator);
+            if (node.next != null) sb.append(SEPARATOR);
             node = node.next;
         }
         sb.append("]");

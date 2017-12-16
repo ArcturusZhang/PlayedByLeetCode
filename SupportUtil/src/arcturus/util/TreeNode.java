@@ -6,8 +6,8 @@ import java.util.List;
 import java.util.Queue;
 
 public class TreeNode {
-    private static final String nullString = "#";
-    private static final String separator = ", ";
+    public static final String NULL_STRING = "#";
+    public static final String SEPARATOR = ", ";
     public int val;
     public TreeNode left;
     public TreeNode right;
@@ -36,6 +36,33 @@ public class TreeNode {
         }
     }
 
+    public List<List<Integer>> levelOrderTraversal() {
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(this);
+        List<List<Integer>> result = new ArrayList<>();
+        while (!queue.isEmpty()) {
+            List<Integer> current = new ArrayList<>();
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
+                TreeNode node = queue.poll();
+                current.add(node.val);
+                if (node.left != null) queue.offer(node.left);
+                if (node.right != null) queue.offer(node.right);
+            }
+            result.add(current);
+        }
+        return result;
+    }
+
+    public int maxDepth() {
+        return depth(this);
+    }
+
+    private int depth(TreeNode node) {
+        if (node == null) return 0;
+        return Math.max(depth(node.left), depth(node.right)) + 1;
+    }
+
     public static String toString(TreeNode root) {
         StringBuilder result = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList<>();
@@ -43,9 +70,9 @@ public class TreeNode {
         boolean flag = false;
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
-            if (flag) result.append(separator);
+            if (flag) result.append(SEPARATOR);
             if (node == null) {
-                result.append(nullString);
+                result.append(NULL_STRING);
             } else {
                 result.append(node.val);
                 queue.add(node.left);
@@ -57,11 +84,11 @@ public class TreeNode {
     }
 
     public static TreeNode parse(String data) {
-        return parse(data, separator, nullString);
+        return parse(data, SEPARATOR, NULL_STRING);
     }
 
     public static TreeNode parse(String data, String separator) {
-        return parse(data, separator, nullString);
+        return parse(data, separator, NULL_STRING);
     }
 
     public static TreeNode parse(String data, String separator, String nullString) {
@@ -89,5 +116,10 @@ public class TreeNode {
             throw new FormatException(e);
         }
         return root;
+    }
+
+    @Override
+    public String toString() {
+        return String.valueOf(this.val);
     }
 }
