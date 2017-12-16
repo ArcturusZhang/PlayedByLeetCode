@@ -1,6 +1,8 @@
 package arcturus.util;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
 public class TreeNode {
@@ -18,6 +20,20 @@ public class TreeNode {
 
     public TreeNode(int val) {
         this(val, null, null);
+    }
+
+    public List<Integer> toArrayList() {
+        List<Integer> result = new ArrayList<>();
+        toArrayListCore(this, result);
+        return result;
+    }
+
+    private void toArrayListCore(TreeNode node, List<Integer> result) {
+        if (node != null) {
+            toArrayListCore(node.left, result);
+            result.add(node.val);
+            toArrayListCore(node.right, result);
+        }
     }
 
     public static String toString(TreeNode root) {
