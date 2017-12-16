@@ -88,4 +88,6 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 093 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) | Backtracking (DFS) |
 | 094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Binary Tree Traversal |
 | 098 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Binary Tree Traversal |
+| 099 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/description/) | Binary Tree Traversal |
+| 100 | [Same Tree](https://leetcode.com/problems/same-tree/description/) | Binary Tree |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
