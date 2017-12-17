@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
+/**
+ * 二叉树类，不加任何限制的二叉树
+ */
 public class TreeNode {
     public static final String NULL_STRING = "#";
     public static final String SEPARATOR = ", ";
@@ -12,16 +15,30 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
+    /**
+     * 构造器。同时指定数值，左儿子和右儿子
+     * @param val 数值
+     * @param left 左儿子
+     * @param right 右儿子
+     */
     public TreeNode(int val, TreeNode left, TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
     }
 
+    /**
+     * 构造器。只指定数值
+     * @param val 数值
+     */
     public TreeNode(int val) {
         this(val, null, null);
     }
 
+    /**
+     * 利用中序遍历将二叉树展平为一个列表
+     * @return 转换结果
+     */
     public List<Integer> toArrayList() {
         List<Integer> result = new ArrayList<>();
         toArrayListCore(this, result);
@@ -36,6 +53,55 @@ public class TreeNode {
         }
     }
 
+    /**
+     * 利用前序遍历将二叉树展平为一个列表
+     * @return 转换结果
+     */
+    public List<Integer> preorderTraversal() {
+        List<Integer> result = new ArrayList<>();
+        preorderCore(this, result);
+        return result;
+    }
+
+    private void preorderCore(TreeNode node, List<Integer> result) {
+        if (node != null) {
+            result.add(node.val);
+            preorderCore(node.left, result);
+            preorderCore(node.right, result);
+        }
+    }
+
+    /**
+     * 利用中序遍历将二叉树展平为一个列表
+     * @return 转换结果
+     * @see TreeNode#toArrayList()
+     */
+    public List<Integer> inorderTraversal() {
+        return this.toArrayList();
+    }
+
+    /**
+     * 利用后序遍历将二叉树展平为一个列表
+     * @return 转换结果
+     */
+    public List<Integer> postorderTraversal() {
+        List<Integer> result = new ArrayList<>();
+        postorderCore(this, result);
+        return result;
+    }
+
+    private void postorderCore(TreeNode node, List<Integer> result) {
+        if (node != null) {
+            postorderCore(node.left, result);
+            postorderCore(node.right, result);
+            result.add(node.val);
+        }
+    }
+
+    /**
+     * 获得二叉树的层序遍历结果。
+     * @return 转换结果
+     */
     public List<List<Integer>> levelOrderTraversal() {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(this);
@@ -54,6 +120,10 @@ public class TreeNode {
         return result;
     }
 
+    /**
+     * 获得二叉树的最大深度（最大层数）
+     * @return
+     */
     public int maxDepth() {
         return depth(this);
     }
@@ -63,16 +133,32 @@ public class TreeNode {
         return Math.max(depth(node.left), depth(node.right)) + 1;
     }
 
+    /**
+     * 利用层序遍历，将二叉树转化为字符串。其中{@code null}节点的转换结果由常量{@code NULL_STRING}决定。
+     * @param root 二叉树的根节点
+     * @return 转换结果
+     */
     public static String toString(TreeNode root) {
+        return TreeNode.toString(root, SEPARATOR, NULL_STRING);
+    }
+
+    /**
+     * 利用层序遍历，根据传入的分隔符和{@code nullString}将二叉树转化为字符串。
+     * @param root 二叉树的根节点
+     * @param separator 分隔符
+     * @param nullString 表示null节点的字符串
+     * @return 转换结果
+     */
+    public static String toString(TreeNode root, String separator, String nullString) {
         StringBuilder result = new StringBuilder();
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         boolean flag = false;
         while (!queue.isEmpty()) {
             TreeNode node = queue.poll();
-            if (flag) result.append(SEPARATOR);
+            if (flag) result.append(separator);
             if (node == null) {
-                result.append(NULL_STRING);
+                result.append(nullString);
             } else {
                 result.append(node.val);
                 queue.add(node.left);
@@ -83,15 +169,37 @@ public class TreeNode {
         return "[" + result.toString() + "]";
     }
 
-    public static TreeNode parse(String data) {
+    /**
+     * 将给定的字符串数据转化为二叉树。
+     * @param data 字符串数据
+     * @return 转化的二叉树根节点
+     * @throws FormatException 转换失败时抛出异常
+     */
+    public static TreeNode parse(String data) throws FormatException {
         return parse(data, SEPARATOR, NULL_STRING);
     }
 
-    public static TreeNode parse(String data, String separator) {
+    /**
+     * 利用给定的分隔符，将给定的字符串数据转化为二叉树。
+     * @param data 字符串数据
+     * @param separator 分隔符
+     * @return 转化的二叉树根节点
+     * @throws FormatException 转换失败时抛出异常
+     */
+    public static TreeNode parse(String data, String separator) throws FormatException {
         return parse(data, separator, NULL_STRING);
     }
 
-    public static TreeNode parse(String data, String separator, String nullString) {
+    /**
+     * 利用给定的分隔符和{@code nullString}，将给定的字符串数据转化为二叉树
+     * @param data 字符串数据
+     * @param separator 分隔符
+     * @param nullString 表示null节点的字符串
+     * @return 转化的二叉树根节点
+     * @throws FormatException 转换失败时抛出异常
+     */
+    public static TreeNode parse(String data, String separator, String nullString)
+    throws FormatException {
         String[] nodeStrings = data.replace("[", "").replace("]", "").split(separator);
         TreeNode root = null;
         try {

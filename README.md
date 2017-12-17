@@ -93,4 +93,6 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 101 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/description/) | Binary Tree |
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/) | Binary Tree Traversal |
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Binary Tree Traversal |
+| 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Binary Tree |
+| 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
