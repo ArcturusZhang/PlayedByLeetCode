@@ -35,14 +35,12 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         TreeNode root = TreeNode.parse("[4, 1, 5, #, 9, 10, 9, #, 16, #, #, 40, 90]");
-        System.out.println(root.toArrayList());
         int[] preorder = ArrayUtils.toPrimitive(root.preorderTraversal().toArray(new Integer[0]));
         int[] inorder = ArrayUtils.toPrimitive(root.inorderTraversal().toArray(new Integer[0]));
-        System.out.println(solution.buildTree(preorder, inorder).toArrayList());
+        System.out.println(root.isSameTree(solution.buildTree(preorder, inorder)));
         root = TreeNode.parse("[1, 2]");
-        System.out.println(root.toArrayList());
         preorder = ArrayUtils.toPrimitive(root.preorderTraversal().toArray(new Integer[0]));
         inorder = ArrayUtils.toPrimitive(root.inorderTraversal().toArray(new Integer[0]));
-        System.out.println(solution.buildTree(preorder, inorder).toArrayList());
+        System.out.println(root.isSameTree(solution.buildTree(preorder, inorder)));
     }
 }

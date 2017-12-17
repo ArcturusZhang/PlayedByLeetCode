@@ -43,6 +43,10 @@ public class Interval {
     public static Interval parse(String data, String separator) throws FormatException {
         String[] nums = data.replace("[", "").replace("]", "").split(separator);
         if (nums.length != 2) throw new FormatException();
-        return new Interval(Integer.valueOf(nums[0].trim()), Integer.valueOf(nums[1].trim()));
+        try {
+            return new Interval(Integer.valueOf(nums[0].trim()), Integer.valueOf(nums[1].trim()));
+        } catch (Exception e) {
+            throw new FormatException(e);
+        }
     }
 }
