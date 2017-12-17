@@ -228,6 +228,6 @@ public class TreeNode {
 
     @Override
     public String toString() {
-        return String.valueOf(this.val);
+        return "TreeNode : val = " + this.val;
     }
 }

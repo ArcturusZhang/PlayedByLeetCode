@@ -108,4 +108,9 @@ public class ListNode {
         sb.append("]");
         return sb.toString();
     }
+
+    @Override
+    public String toString() {
+        return "ListNode : val = " + this.val;
+    }
 }
