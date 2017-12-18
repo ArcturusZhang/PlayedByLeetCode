@@ -139,19 +139,21 @@ public class TreeNode {
      * 利用中序遍历将二叉树展平为一个列表
      *
      * @return 转换结果
+     * @see TreeNode#inorderTraversal()
      */
-    public List<Integer> toArrayList() {
-        List<Integer> result = new ArrayList<>();
-        toArrayListCore(this, result);
-        return result;
+    public List<Integer> asList() {
+        return this.inorderTraversal();
     }
 
-    private void toArrayListCore(TreeNode node, List<Integer> result) {
-        if (node != null) {
-            toArrayListCore(node.left, result);
-            result.add(node.val);
-            toArrayListCore(node.right, result);
-        }
+    /**
+     * 利用中序遍历将二叉树展平为一个列表
+     *
+     * @return 转换结果
+     * @see TreeNode#inorderTraversal()
+     */
+    @Deprecated
+    public List<Integer> toArrayList() {
+        return this.inorderTraversal();
     }
 
     /**
@@ -177,10 +179,20 @@ public class TreeNode {
      * 利用中序遍历将二叉树展平为一个列表
      *
      * @return 转换结果
-     * @see TreeNode#toArrayList()
+     * @see TreeNode#asList()
      */
     public List<Integer> inorderTraversal() {
-        return this.toArrayList();
+        List<Integer> result = new ArrayList<>();
+        inorderCore(this, result);
+        return result;
+    }
+
+    private void inorderCore(TreeNode node, List<Integer> result) {
+        if (node != null) {
+            inorderCore(node.left, result);
+            result.add(node.val);
+            inorderCore(node.right, result);
+        }
     }
 
     /**

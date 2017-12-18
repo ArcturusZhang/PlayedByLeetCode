@@ -58,6 +58,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 057 | [Insert Interval](https://leetcode.com/problems/insert-interval/description/) | Brutal Force |
 | 058 | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/description/) | Brutal Force |
 | 060 | [Permutation Sequence](https://leetcode.com/problems/permutation-sequence/description/) | Brutal Force (Reuse 031) |
+| 061 | [Rotate List](https://leetcode.com/problems/rotate-list/description/) | Linked List |
 | 062 | [Unique Paths](https://leetcode.com/problems/unique-paths/description/) | Dynamic Programming |
 | 063 | [Unique Paths II](https://leetcode.com/problems/unique-paths-ii/description/) | Dynamic Programming |
 | 064 | [Minimum Path Sum](https://leetcode.com/problems/minimum-path-sum/description/) | Dynamic Programming |
