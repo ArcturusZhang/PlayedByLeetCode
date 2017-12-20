@@ -101,6 +101,12 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/) | Binary Tree |
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) | Binary Tree & Linked List |
 | 110 | [Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/description/) | Binary Tree Traversal |
+| 111 | [Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/) | Binary Tree Traversal |
+| 112 | [Path Sum](https://leetcode.com/problems/path-sum/description/) | Binary Tree |
+| 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/description/) | Binary Tree & Backtracking (DFS) |
+| 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Binary Tree Traversal |
+| 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Dynamic Programming |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
+| 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |

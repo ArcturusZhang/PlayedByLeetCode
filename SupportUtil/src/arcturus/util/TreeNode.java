@@ -135,6 +135,10 @@ public class TreeNode {
         return root;
     }
 
+    public String toStringAll() {
+        return TreeNode.toString(this);
+    }
+
     /**
      * 利用中序遍历将二叉树展平为一个列表
      *
