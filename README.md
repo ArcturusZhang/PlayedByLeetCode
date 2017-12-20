@@ -106,6 +106,9 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 113 | [Path Sum II](https://leetcode.com/problems/path-sum-ii/description/) | Binary Tree & Backtracking (DFS) |
 | 114 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/description/) | Binary Tree Traversal |
 | 115 | [Distinct Subsequences](https://leetcode.com/problems/distinct-subsequences/description/) | Dynamic Programming |
+| 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/) | Binary Tree & Linked List |
+| 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) | Binary Tree & Linked List |
+| 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) | Brutal Force |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |

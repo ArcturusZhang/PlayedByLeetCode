@@ -2,19 +2,18 @@ import arcturus.util.TreeLinkNode;
 
 public class Solution {
     /**
-     * 题目描述：<url>https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/</url>
+     * 题目描述：<url>https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/</url>
      * 解：
-     * 题目假定树一定是满的，大大降低了题目的难度。
-     * 每一行都是一个链表，所以这里也使用和链表类似的虚拟头节点来处理，以避免NullPointerException和很多if判断
+     * 本题和116基本相同，只是去掉了"树一定是满的"这个附加条件。但实际上，上一题的解法已经很普遍，可以直接拿来当作本题答案。
+     * 与116题相同，本题本质上也是一个链表的题目，所以也是利用链表中的虚拟头节点方式来求解的。
      * @param root
      */
     public void connect(TreeLinkNode root) {
         if (root == null) return;
+        TreeLinkNode node = root;
         TreeLinkNode phead = new TreeLinkNode(0);
         TreeLinkNode last = phead;
-        TreeLinkNode node = root;
         while (node != null) {
-            // 遍历本行，同时链接下一行
             if (node.left != null) {
                 last.next = node.left;
                 last = last.next;
@@ -24,18 +23,12 @@ public class Solution {
                 last = last.next;
             }
             node = node.next;
-            // 换到下一行去
+            // 换行
             if (node == null) {
                 last = phead;
                 node = phead.next; // 这就是下一行的开头
                 phead.next = null;
             }
         }
-    }
-
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-        TreeLinkNode root = TreeLinkNode.parse("[1, 2, 3, 4, 5, 6, 7]");
-        System.out.println(root.asList());
     }
 }

@@ -1,17 +1,26 @@
 package arcturus.util;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Queue;
 
-public class TreeLinkNode extends TreeNode {
-    TreeLinkNode next;
+public class TreeLinkNode {
+    public static final String NULL_STRING = "#";
+    public static final String SEPARATOR = ", ";
+    public int val;
+    public TreeLinkNode left;
+    public TreeLinkNode right;
+    public TreeLinkNode next;
 
     public TreeLinkNode(int val, TreeLinkNode left, TreeLinkNode right) {
-        super(val, left, right);
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
     public TreeLinkNode(int val) {
-        super(val);
+        this(val, null, null);
     }
 
 
@@ -73,5 +82,51 @@ public class TreeLinkNode extends TreeNode {
             throw new FormatException(e);
         }
         return root;
+    }
+
+    public List<Integer> asList() {
+        return this.inorderTraversal();
+    }
+
+    public List<Integer> preorderTraversal() {
+        List<Integer> result = new ArrayList<>();
+        preorderCore(this, result);
+        return result;
+    }
+
+    private void preorderCore(TreeLinkNode node, List<Integer> result) {
+        if (node != null) {
+            result.add(node.val);
+            preorderCore(node.left, result);
+            preorderCore(node.right, result);
+        }
+    }
+
+    public List<Integer> inorderTraversal() {
+        List<Integer> result = new ArrayList<>();
+        inorderCore(this, result);
+        return result;
+    }
+
+    private void inorderCore(TreeLinkNode node, List<Integer> result) {
+        if (node != null) {
+            inorderCore(node.left, result);
+            result.add(node.val);
+            inorderCore(node.right, result);
+        }
+    }
+
+    public List<Integer> postorderTraversal() {
+        List<Integer> result = new ArrayList<>();
+        postorderCore(this, result);
+        return result;
+    }
+
+    private void postorderCore(TreeLinkNode node, List<Integer> result) {
+        if (node != null) {
+            postorderCore(node.left, result);
+            postorderCore(node.right, result);
+            result.add(node.val);
+        }
     }
 }
