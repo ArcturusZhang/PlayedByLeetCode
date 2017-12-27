@@ -46,6 +46,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | Backtracking (DFS) |
 | 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | Backtracking (DFS) |
 | 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | Integer Long Multiplication |
+| 044 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/) | Brutal Force, Dynamic Programming |
 | 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | Backtracking (DFS) |
 | 047 | [Permutations II](https://leetcode.com/problems/permutations-ii/description/) | Backtracking (DFS) |
 | 048 | [Rotate Image](https://leetcode.com/problems/rotate-image/description/) | Brutal Force |
