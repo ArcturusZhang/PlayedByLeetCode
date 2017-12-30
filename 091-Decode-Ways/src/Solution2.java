@@ -1,4 +1,4 @@
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 解：（Accepted）
      * 动态规划。定义dp[i]为字符串中从0到i这一部分（包括i）所能解码方式的数目。则边界条件为
@@ -15,6 +15,7 @@ public class Solution2 {
      * @param s
      * @return
      */
+    @Override
     public int numDecodings(String s) {
         if (s == null || s.length() == 0) return 0;
         int[] dp = new int[s.length()];

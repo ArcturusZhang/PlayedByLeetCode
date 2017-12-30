@@ -117,3 +117,4 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
+| 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |

@@ -1,12 +1,13 @@
 import java.util.Stack;
 
-public class Solution1 {
+public class Solution1 extends Solution {
     /**
      * 解：
      * 用栈的实现
      * @param s
      * @return
      */
+    @Override
     public int longestValidParentheses(String s) {
         if (s == null || s.length() <= 1) return 0;
         Stack<Integer> stack = new Stack<>();
@@ -28,24 +29,5 @@ public class Solution1 {
             }
         }
         return max;
-    }
-
-    public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        System.out.println("Solution1: ");
-        System.out.println(solution1.longestValidParentheses(")()())"));
-        System.out.println(solution1.longestValidParentheses("(()())"));
-        System.out.println(solution1.longestValidParentheses(")()()"));
-        System.out.println(solution1.longestValidParentheses(")()"));
-        System.out.println(solution1.longestValidParentheses("((((()"));
-        System.out.println(solution1.longestValidParentheses("((()"));
-        Solution2 solution2 = new Solution2();
-        System.out.println("Solution2: ");
-        System.out.println(solution2.longestValidParentheses(")()())"));
-        System.out.println(solution2.longestValidParentheses("(()())"));
-        System.out.println(solution2.longestValidParentheses(")()()"));
-        System.out.println(solution2.longestValidParentheses(")()"));
-        System.out.println(solution2.longestValidParentheses("((((()"));
-        System.out.println(solution2.longestValidParentheses("((()"));
     }
 }

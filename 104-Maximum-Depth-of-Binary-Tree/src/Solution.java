@@ -1,25 +1,15 @@
 import arcturus.util.TreeNode;
 
-public class Solution {
-    /**
-     * 题目描述：获得一个二叉树的最大深度
-     * @param root
-     * @return
-     */
-    public int maxDepth(TreeNode root) {
-        return depth(root);
-    }
-
-    private int depth(TreeNode node) {
-        if (node == null) return 0;
-        return Math.max(depth(node.left), depth(node.right)) + 1;
-    }
+public abstract class Solution {
+    public abstract int maxDepth(TreeNode root);
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        testCases(new Solution1());
+    }
+
+    private static void testCases(Solution solution) {
         TreeNode root = TreeNode.parse("[2, 1, 8, 9, #, 19, 3, #, #, 10]");
         System.out.println(root.levelOrderTraversal());
         System.out.println(solution.maxDepth(root));
-        System.out.println(root.maxDepth());
     }
 }

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 一个自制的单向链表类
  */
-public class ListNode {
+public class ListNode implements Cloneable {
     public static final String SEPARATOR = ", ";
     public int val;
     public ListNode next;
@@ -64,6 +64,7 @@ public class ListNode {
      * @throws CyclicListException 当链表中有环时抛出异常
      */
     public static String toString(ListNode node) throws FormatException, CyclicListException {
+        if (node == null) return "[]";
         if (node.hasCycle()) throw new CyclicListException();
         StringBuilder sb = new StringBuilder();
         sb.append("[");
@@ -164,5 +165,13 @@ public class ListNode {
     @Override
     public String toString() {
         return "ListNode : val = " + this.val;
+    }
+
+    @Override
+    public ListNode clone() throws CyclicListException {
+        if (this.hasCycle()) throw new CyclicListException();
+        ListNode newNode = new ListNode(this.val);
+        if (this.next != null) newNode.next = this.next.clone();
+        return newNode;
     }
 }

@@ -1,4 +1,4 @@
-public class Solution1 {
+public class Solution1 extends Solution {
     /**
      * 题目描述：<url>https://leetcode.com/problems/wildcard-matching/description/</url>
      * 解：
@@ -8,6 +8,7 @@ public class Solution1 {
      * @param pattern
      * @return
      */
+    @Override
     public boolean isMatch(String string, String pattern) {
         if (string == null || pattern == null) return false;
         return isMatchCore(string, 0, pattern, 0);
@@ -31,22 +32,5 @@ public class Solution1 {
             if (pattern.charAt(p) != string.charAt(s)) return false; // 当前字母不相同，匹配失败
             return isMatchCore(string, s + 1, pattern, p + 1); // 如果当前字母相同，则继续查看下一字符
         }
-    }
-
-    public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        Solution2 solution2 = new Solution2();
-        System.out.println(solution2.isMatch("", ""));
-        System.out.println(solution2.isMatch("", "*"));
-        System.out.println(solution2.isMatch("a", "aa"));
-        System.out.println(solution2.isMatch("a", "a*"));
-        System.out.println(solution2.isMatch("aa", "a"));
-        System.out.println(solution2.isMatch("ap", "a?"));
-        System.out.println(solution2.isMatch("ap", "?a"));
-        System.out.println(solution2.isMatch("aa", "a*"));
-        System.out.println(solution2.isMatch("ab", "?*"));
-        System.out.println(solution2.isMatch("aab", "c*a*b"));
-        System.out.println(solution2.isMatch("aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaaba", "a*******b"));
-        System.out.println(solution2.isMatch("aaabbbaabaaaaababaabaaabbabbbbbbbbaabababbabbbaaaab", "a*******b"));
     }
 }

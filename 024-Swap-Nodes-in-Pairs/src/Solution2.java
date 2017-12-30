@@ -1,11 +1,12 @@
 import arcturus.util.ListNode;
 
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 用双指针的实现。这种方法很难拓展。
      * @param head
      * @return
      */
+    @Override
     public ListNode swapPairs(ListNode head) {
         if (head == null) return null;
         ListNode pHead = new ListNode(0);

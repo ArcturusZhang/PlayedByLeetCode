@@ -1,9 +1,10 @@
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 利用数列a_{n+1} = (a_n + x / a_n) / 2的极限为sqrt(x)
      * @param x
      * @return
      */
+    @Override
     public int mySqrt(int x) {
         long r = x;
         while (r * r > x) {

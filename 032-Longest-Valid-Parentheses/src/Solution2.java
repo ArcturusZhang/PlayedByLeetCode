@@ -1,4 +1,4 @@
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 解：
      * 利用动态规划。记longest[i]为以字符i为结尾的最长合法括号序列的长度。那么有如下的递推关系：
@@ -14,6 +14,7 @@ public class Solution2 {
      * @param s
      * @return
      */
+    @Override
     public int longestValidParentheses(String s) {
         if (s == null || s.length() <= 1) return 0;
         int[] longest = new int[s.length()];

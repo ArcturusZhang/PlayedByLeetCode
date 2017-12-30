@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 非递归版本
      * @param root
      * @return
      */
+    @Override
     public List<Integer> inorderTraversal(TreeNode root) {
         TreeNode node = root;
         Stack<TreeNode> stack = new Stack<>();

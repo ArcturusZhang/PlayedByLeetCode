@@ -1,4 +1,4 @@
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 用动态规划来求解。定义dp(i,j)为字符串string[0,i)和模式pattern[0,j)是否匹配。（区间是左开右闭的，这意味着string[0,0)表示空字符串）
      * 首先确定边界条件。dp(0,0) = true：两个空字符串是一定能够匹配的。
@@ -17,6 +17,7 @@ public class Solution2 {
      * @param pattern
      * @return
      */
+    @Override
     public boolean isMatch(String string, String pattern) {
         if (string == null || pattern == null) return false;
         boolean[][] dp = new boolean[string.length() + 1][pattern.length() + 1];

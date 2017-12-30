@@ -2,7 +2,7 @@ import arcturus.util.ListNode;
 
 import java.util.Stack;
 
-public class Solution1 {
+public class Solution1 extends Solution {
     /**
      * 题目描述：<url>https://leetcode.com/problems/swap-nodes-in-pairs/description/</url>
      * 解：
@@ -11,6 +11,7 @@ public class Solution1 {
      * @param head
      * @return
      */
+    @Override
     public ListNode swapPairs(ListNode head) {
         if (head == null) return null;
         Stack<ListNode> stack = new Stack<>();
@@ -35,14 +36,5 @@ public class Solution1 {
         }
         last.next = null; // 避免链表成环造成死循环
         return phead.next;
-    }
-
-    public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        Solution2 solution2 = new Solution2();
-        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parse("[1, 2, 3, 4]"))));
-        System.out.println(ListNode.toString(solution1.swapPairs(ListNode.parse("[1, 2, 3, 4, 5]"))));
-        System.out.println(ListNode.toString(solution2.swapPairs(ListNode.parse("[1, 2, 3, 4]"))));
-        System.out.println(ListNode.toString(solution2.swapPairs(ListNode.parse("[1, 2, 3, 4, 5]"))));
     }
 }

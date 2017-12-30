@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * LeetCode讨论区中一个人的思路，只需要一个HashSet即可。
      * 思路：
@@ -12,6 +12,7 @@ public class Solution2 {
      * @param board
      * @return
      */
+    @Override
     public boolean isValidSudoku(char[][] board) {
         Set<String> set = new HashSet<>();
         for (int row = 0; row < 9; row++) {

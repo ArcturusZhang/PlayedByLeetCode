@@ -1,4 +1,4 @@
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 利用异或运算。异或运算有这样的基本性质，a^a = 0, a^b = b^a, a^0 = a。
      * 将数组中的所有数字依次做异或运算，最后得到的结果就是单独的数字。
@@ -9,6 +9,7 @@ public class Solution2 {
      * @param nums
      * @return
      */
+    @Override
     public int singleNumber(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
         int result = 0;

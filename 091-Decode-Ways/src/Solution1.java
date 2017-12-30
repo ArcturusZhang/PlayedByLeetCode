@@ -1,4 +1,4 @@
-public class Solution1 {
+public class Solution1 extends Solution {
     int ways;
 
     /**
@@ -8,6 +8,7 @@ public class Solution1 {
      * @param s
      * @return
      */
+    @Override
     public int numDecodings(String s) {
         if (s == null || s.length() == 0) return 0;
         ways = 0;
@@ -27,22 +28,5 @@ public class Solution1 {
         } else if (start == s.length()) { // 回溯出口
             ways++;
         }
-    }
-
-    public static void main(String[] args) {
-        Solution1 solution1 = new Solution1();
-        Solution2 solution2 = new Solution2();
-        System.out.println(solution1.numDecodings("0"));
-        System.out.println(solution1.numDecodings("10"));
-        System.out.println(solution1.numDecodings("10545"));
-        System.out.println(solution1.numDecodings("9035421"));
-        System.out.println(solution1.numDecodings("820210"));
-        System.out.println(solution1.numDecodings("9371597631128776948387197132267188677349946742344217846154932859125134924241649584251978418763151253"));
-        System.out.println(solution2.numDecodings("0"));
-        System.out.println(solution2.numDecodings("10"));
-        System.out.println(solution2.numDecodings("10545"));
-        System.out.println(solution2.numDecodings("9035421"));
-        System.out.println(solution2.numDecodings("820210"));
-        System.out.println(solution2.numDecodings("9371597631128776948387197132267188677349946742344217846154932859125134924241649584251978418763151253"));
     }
 }

@@ -1,9 +1,7 @@
-import arcturus.util.TreeNode;
-
 import java.util.List;
 
 public abstract class Solution {
-    public abstract List<List<Integer>> zigzagLevelOrder(TreeNode root);
+    public abstract List<Integer> grayCode(int n);
 
     public static void main(String[] args) {
         testCases(new Solution1());
@@ -12,7 +10,6 @@ public abstract class Solution {
 
     private static void testCases(Solution solution) {
         System.out.println(solution.getClass().getName());
-        TreeNode root = TreeNode.parse("[3,9,20,null,null,15,7]", ",", "null");
-        System.out.println(solution.zigzagLevelOrder(root));
+        System.out.println(solution.grayCode(4));
     }
 }

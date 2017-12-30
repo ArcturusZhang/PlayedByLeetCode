@@ -2,7 +2,7 @@ import arcturus.util.ListNode;
 
 import java.util.HashSet;
 
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * 利用一个{@code HashSet}储存已经经过过的节点，如果出现了重复节点，即说明链表中有环。
      * 时间复杂度：O(N)
@@ -10,6 +10,7 @@ public class Solution2 {
      * @param head
      * @return
      */
+    @Override
     public boolean hasCycle(ListNode head) {
         if (head == null) return false;
         HashSet<ListNode> set = new HashSet<>();

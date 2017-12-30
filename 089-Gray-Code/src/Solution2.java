@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Solution2 {
+public class Solution2 extends Solution {
     /**
      * n=3的解是基于n=2得来的。
      * n=2的解为00, 01, 11, 10
@@ -10,6 +10,7 @@ public class Solution2 {
      * @param n
      * @return
      */
+    @Override
     public List<Integer> grayCode(int n) {
         List<Integer> result = new ArrayList<>();
         result.add(0);
