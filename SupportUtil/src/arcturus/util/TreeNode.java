@@ -150,17 +150,6 @@ public class TreeNode {
     }
 
     /**
-     * 利用中序遍历将二叉树展平为一个列表
-     *
-     * @return 转换结果
-     * @see TreeNode#inorderTraversal()
-     */
-    @Deprecated
-    public List<Integer> toArrayList() {
-        return this.inorderTraversal();
-    }
-
-    /**
      * 利用前序遍历将二叉树展平为一个列表
      *
      * @return 转换结果
@@ -275,5 +264,19 @@ public class TreeNode {
     @Override
     public String toString() {
         return "TreeNode : val = " + this.val;
+    }
+
+    /**
+     * 判定本树是否为平衡树。
+     * @return 如果以本节点为根的树是平衡树，返回{@code true}，否则返回{@code false}
+     */
+    public boolean isBalanced() {
+        return isBalancedCore(this);
+    }
+
+    private boolean isBalancedCore(TreeNode node) {
+        if (node == null) return true;
+        return Math.abs(depth(node.left) - depth(node.right)) <= 1
+                && isBalancedCore(node.left) && isBalancedCore(node.right);
     }
 }
