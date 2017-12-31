@@ -88,4 +88,108 @@ public class ArrayUtils {
         }
         return result;
     }
+
+    public static <T> String toString(T[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i].toString());
+            if (i + 1 < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(char[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(int[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(short[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(long[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(float[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(double[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
+
+    public static String toString(boolean[] array, int start, int end) throws ArrayIndexOutOfBoundsException {
+        if (start < 0 || end >= array.length) throw new ArrayIndexOutOfBoundsException();
+        if (array == null) return "null";
+        StringBuilder sb = new StringBuilder();
+        sb.append("[");
+        for (int i = start; i < end; i++) {
+            sb.append(array[i]);
+            if (i < end - 1) sb.append(", ");
+        }
+        sb.append("]");
+        return sb.toString();
+    }
 }

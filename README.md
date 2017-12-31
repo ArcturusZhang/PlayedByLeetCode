@@ -71,7 +71,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/description/) | Dynamic Programming (Fibonacci) |
 | 071 | [Simplify Path](https://leetcode.com/problems/simplify-path/description/) | Stack |
 | 072 | [Edit Distance](https://leetcode.com/problems/edit-distance/description/) | Dynamic Programming |
-| 073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) | Brutal Force |
+| 073 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/description/) | Hash Table |
 | 074 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/description/) | Binary Search |
 | 075 | [Sort Colors](https://leetcode.com/problems/sort-colors/discuss/) | Hash Table |
 | 076 | [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/) | Hash Table |
