@@ -1,18 +1,12 @@
-public class Solution {
-    /**
-     * 智障题目。
-     * @param s
-     * @return
-     */
-    public int lengthOfLastWord(String s) {
-        if (s == null || s.length() == 0) return 0;
-        String[] strings = s.split(" ");
-        if (strings.length == 0) return 0;
-        return strings[strings.length - 1].length();
-    }
+public abstract class Solution {
+    public abstract int lengthOfLastWord(String s);
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        testCases(new Solution1());
+    }
+
+    private static void testCases(Solution solution) {
+        System.out.println(solution.getClass().getName());
         System.out.println(solution.lengthOfLastWord("Hello world!"));
     }
 }
