@@ -45,6 +45,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 038 | [Count and Say](https://leetcode.com/problems/count-and-say/description/) | Brutal Force |
 | 039 | [Combination Sum](https://leetcode.com/problems/combination-sum/description/) | Backtracking (DFS) |
 | 040 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/description/) | Backtracking (DFS) |
+| 041 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/description/) | Bucket Sort |
 | 043 | [Multiply Strings](https://leetcode.com/problems/multiply-strings/description/) | Integer Long Multiplication |
 | 044 | [Wildcard Matching](https://leetcode.com/problems/wildcard-matching/description/) | Brutal Force, Dynamic Programming |
 | 046 | [Permutations](https://leetcode.com/problems/permutations/description/) | Backtracking (DFS) |
@@ -110,6 +111,8 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 116 | [Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/discuss/) | Binary Tree & Linked List |
 | 117 | [Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/) | Binary Tree & Linked List |
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) | Brutal Force |
+| 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | Brutal Force |
+| 120 | [Triangle](https://leetcode.com/problems/triangle/description/) | Dynamic Programming |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | String (Palindrome) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |

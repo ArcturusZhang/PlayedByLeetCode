@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
-public class BSTIterator {
+public class BSTIterator extends Solution {
     /**
      * 题目描述：<url>https://leetcode.com/problems/binary-search-tree-iterator/description/</url>
      * 解：
@@ -41,15 +41,5 @@ public class BSTIterator {
             current = stack.pop();
         }
         return node.val;
-    }
-
-    public static void main(String[] args) {
-        TreeNode root = TreeNode.parse("[5, 3, 8, 1, 4, 6, 7]");
-        BSTIterator iterator = new BSTIterator(root);
-        List<Integer> result = new ArrayList<>();
-        while (iterator.hasNext()) {
-            result.add(iterator.next());
-        }
-        System.out.println(result);
     }
 }
