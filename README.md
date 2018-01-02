@@ -113,6 +113,8 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 118 | [Pascal's Triangle](https://leetcode.com/problems/pascals-triangle/description/) | Brutal Force |
 | 119 | [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii/description/) | Brutal Force |
 | 120 | [Triangle](https://leetcode.com/problems/triangle/description/) | Dynamic Programming |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Dynamic Programming |
+| 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | Greedy |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | String (Palindrome) |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
