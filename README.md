@@ -116,6 +116,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Dynamic Programming |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | Greedy |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | String (Palindrome) |
+| 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
