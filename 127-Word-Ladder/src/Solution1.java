@@ -15,7 +15,7 @@ public class Solution1 extends Solution {
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
         Set<String> wordDict = new HashSet<>(wordList), reached = new HashSet<>();
         if (!wordDict.contains(endWord)) return 0;
-        if (wordDict.contains(beginWord)) wordDict.remove(beginWord);
+        wordDict.remove(beginWord);
         int length = 1;
         reached.add(beginWord);
         while (!reached.contains(endWord)) { // 如果达到endWord则结束循环

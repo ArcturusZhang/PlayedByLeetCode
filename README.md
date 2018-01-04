@@ -116,7 +116,9 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Dynamic Programming |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | Greedy |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | String (Palindrome) |
+| 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | BFS & DFS, Graph (optimal path) |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
+| 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Sorting, Hash Table |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
