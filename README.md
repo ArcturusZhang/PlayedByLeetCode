@@ -120,10 +120,12 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Sorting, Hash Table |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
+| 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Linked List |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
+| 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
