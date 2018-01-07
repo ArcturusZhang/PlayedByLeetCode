@@ -4,6 +4,7 @@ package arcturus.util;
  * 一个关于数组的工具类
  */
 public class ArrayUtils {
+    private static final String GRID_SEPARATOR = ", ";
     /**
      * 本工具类不能被实例化
      */
@@ -191,5 +192,22 @@ public class ArrayUtils {
         }
         sb.append("]");
         return sb.toString();
+    }
+
+    public static char[][] gridConstructor(String data, String separator) throws ArrayIndexOutOfBoundsException {
+        String[] strings = data.split(separator);
+        int rows = strings.length;
+        int cols = strings[0].length();
+        char[][] grid = new char[rows][cols];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                grid[i][j] = strings[i].charAt(j);
+            }
+        }
+        return grid;
+    }
+
+    public static char[][] gridConstructor(String data) {
+        return gridConstructor(data, GRID_SEPARATOR);
     }
 }

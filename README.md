@@ -127,6 +127,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search | 
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
+| 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
