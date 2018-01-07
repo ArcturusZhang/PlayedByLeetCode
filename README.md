@@ -124,11 +124,15 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
-| 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search | 
+| 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search |
+| 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | Math |
+| 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) | Math |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
+| 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
+| 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Hash Table |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |
