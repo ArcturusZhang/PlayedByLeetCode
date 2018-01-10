@@ -194,20 +194,24 @@ public class ArrayUtils {
         return sb.toString();
     }
 
-    public static char[][] gridConstructor(String data, String separator) throws ArrayIndexOutOfBoundsException {
+    public static char[][] gridConstructor(String data, String separator) throws FormatException {
         String[] strings = data.split(separator);
         int rows = strings.length;
         int cols = strings[0].length();
         char[][] grid = new char[rows][cols];
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                grid[i][j] = strings[i].charAt(j);
+        try {
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < cols; j++) {
+                    grid[i][j] = strings[i].charAt(j);
+                }
             }
+        } catch (Exception e) {
+            throw new FormatException(e);
         }
         return grid;
     }
 
-    public static char[][] gridConstructor(String data) {
+    public static char[][] gridConstructor(String data) throws FormatException {
         return gridConstructor(data, GRID_SEPARATOR);
     }
 }

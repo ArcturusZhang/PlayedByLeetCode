@@ -42,7 +42,7 @@ public class Interval {
      */
     public static Interval parse(String data, String separator) throws FormatException {
         String[] nums = data.replace("[", "").replace("]", "").split(separator);
-        if (nums.length != 2) throw new FormatException();
+        if (nums.length != 2) throw new FormatException("An interval should have two components.");
         try {
             return new Interval(Integer.valueOf(nums[0].trim()), Integer.valueOf(nums[1].trim()));
         } catch (Exception e) {
