@@ -115,6 +115,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 120 | [Triangle](https://leetcode.com/problems/triangle/description/) | Dynamic Programming |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | Dynamic Programming |
 | 122 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/) | Greedy |
+| 123 | [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/description/) | Dynamic Programming |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/description/) | String (Palindrome) |
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | BFS & DFS, Graph (optimal path) |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
@@ -129,6 +130,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) | Math |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
+| 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) | Dynamic Programming |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
