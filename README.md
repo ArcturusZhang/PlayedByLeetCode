@@ -135,6 +135,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Hash Table |
+| 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Linked List, Stack |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |
