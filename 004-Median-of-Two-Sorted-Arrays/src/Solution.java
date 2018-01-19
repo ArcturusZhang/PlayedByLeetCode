@@ -3,6 +3,7 @@ public abstract class Solution {
 
     public static void main(String[] args) {
         testCases(new Solution1());
+        testCases(new Solution2());
     }
 
     private static void testCases(Solution solution) {

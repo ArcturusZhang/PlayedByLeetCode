@@ -15,6 +15,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 007 | [Reverse Integer](https://leetcode.com/problems/reverse-integer) | Brutal Force |
 | 008 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | Brutal Force |
 | 009 | [Palindrome Number](https://leetcode.com/problems/palindrome-number) | Brutal Force (Reverse Half) |
+| 010 | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/description/) | Brutal Force |
 | 011 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water) | Greedy |
 | 012 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/description/) | Brutal Force |
 | 013 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/description/) | Brutal Force |
