@@ -4,7 +4,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 
 ## Problems
 
-| ID | Problem | Algorithm Used |
+| ID | Problem | Relative Topic |
 | --- | :--- | :--- |
 | 001 | [Two Sum](https://leetcode.com/problems/two-sum/description/) | Brutal Force, Hash Table |
 | 002 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/) | Integer Addition |
@@ -126,6 +126,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
+| 148 | [Sort List](https://leetcode.com/problems/sort-list/description/) | Merge Sort |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | Math |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) | Math |

@@ -174,4 +174,50 @@ public class ListNode implements Cloneable {
         if (this.next != null) newNode.next = this.next.clone();
         return newNode;
     }
+
+    /**
+     * 从当前节点开始，排序后续的链表。
+     * @return 排序后链表的头节点
+     * @throws CyclicListException 当链表中有环时抛出异常
+     */
+    public ListNode sort() throws CyclicListException {
+        if (this.hasCycle()) throw new CyclicListException();
+        return mergeSort(this);
+    }
+
+    private ListNode mergeSort(ListNode head) {
+        if (head == null || head.next == null) return head;
+        // 第一步：将链表拆为相等的两部分
+        ListNode slow = head, fast = head.next;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        fast = slow.next;
+        slow.next = null; //将链表从中间断开
+        head = mergeSort(head);
+        fast = mergeSort(fast);
+        return mergeSortedLists(head, fast);
+    }
+
+    private ListNode mergeSortedLists(ListNode head1, ListNode head2) {
+        ListNode phead = new ListNode(0), pnode = phead;
+        while (head1 != null && head2 != null) {
+            if (head1.val < head2.val) {
+                pnode.next = head1;
+                head1 = head1.next;
+            } else {
+                pnode.next = head2;
+                head2 = head2.next;
+            }
+            pnode = pnode.next;
+        }
+        if (head1 != null) {
+            pnode.next = head1;
+        }
+        if (head2 != null) {
+            pnode.next = head2;
+        }
+        return phead.next;
+    }
 }
