@@ -129,6 +129,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/description/) | Merge Sort |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | Math |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Hash Map |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) | Math |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
