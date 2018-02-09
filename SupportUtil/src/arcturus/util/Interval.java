@@ -3,7 +3,7 @@ package arcturus.util;
 /**
  * 一个描述了区间的类
  */
-public class Interval {
+public class Interval implements Cloneable {
     public static final String SEPARATOR = ", ";
     public int start;
     public int end;
@@ -48,5 +48,10 @@ public class Interval {
         } catch (Exception e) {
             throw new FormatException(e);
         }
+    }
+
+    @Override
+    public Interval clone() {
+        return new Interval(this.start, this.end);
     }
 }

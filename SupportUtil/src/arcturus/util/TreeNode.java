@@ -279,4 +279,12 @@ public class TreeNode {
         return Math.abs(depth(node.left) - depth(node.right)) <= 1
                 && isBalancedCore(node.left) && isBalancedCore(node.right);
     }
+
+    @Override
+    public TreeNode clone() {
+        TreeNode newNode = new TreeNode(this.val);
+        if (this.left != null) newNode.left = this.left.clone();
+        if (this.right != null) newNode.right = this.right.clone();
+        return newNode;
+    }
 }
