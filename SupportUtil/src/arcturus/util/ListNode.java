@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 一个自制的单向链表类
+ * 单向链表类
  */
 public class ListNode implements Cloneable {
     public static final String SEPARATOR = ", ";

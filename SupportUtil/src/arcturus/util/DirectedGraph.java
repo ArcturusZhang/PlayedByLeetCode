@@ -13,9 +13,7 @@ public interface DirectedGraph<V> {
     boolean add(V v);
 
     default void addAll(V... vs) {
-        for (V v : vs) {
-            add(v);
-        }
+        for (V v : vs) add(v);
     }
 
     /**
@@ -27,9 +25,7 @@ public interface DirectedGraph<V> {
     boolean add(Edge<V> edge);
 
     default void addAll(Edge<V>... edges) {
-        for (Edge<V> edge : edges) {
-            add(edge);
-        }
+        for (Edge<V> edge : edges) add(edge);
     }
 
     /**

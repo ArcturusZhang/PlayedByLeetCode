@@ -4,11 +4,46 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * 使用邻接表实现的有向图类
+ *
+ * @param <V> 顶点类型
+ */
 public class ListDGraph<V> implements DirectedGraph<V> {
-    private Map<V, Set<Edge<V>>> vertexes;
+    public static final String SEPARATOR1 = ", ";
+    public static final String SEPARATOR2 = "; ";
+    private Map<V, Set<V>> adjMap;
 
+    /**
+     * 返回一个空的有向图
+     */
     public ListDGraph() {
-        vertexes = new HashMap<>();
+        adjMap = new HashMap<>();
+    }
+
+    /**
+     * 利用给定的邻接表构造有向图
+     *
+     * @param adjMap 邻接表
+     */
+    public ListDGraph(Map<V, Set<V>> adjMap) {
+        this.adjMap = adjMap;
+    }
+
+    public ListDGraph(V[] vs, Edge<V>[] edges) {
+        addAll(vs);
+        addAll(edges);
+    }
+
+    /**
+     * 利用给定的顶点列表和边列表构造有向图
+     *
+     * @param vs    顶点集合
+     * @param edges 边集合
+     */
+    public ListDGraph(Collection<V> vs, Collection<Edge<V>> edges) {
+        for (V v : vs) add(v);
+        for (Edge<V> edge : edges) add(edge);
     }
 
     /**
@@ -20,8 +55,8 @@ public class ListDGraph<V> implements DirectedGraph<V> {
      * @param data 数据文本
      * @return 有向图
      */
-    public static ListDGraph<String> parse(String data, String separator) {
-        Pattern pattern = Pattern.compile("(.+); \\[(.+)]");
+    public static ListDGraph<String> parse(String data, String separator, String separatorBetweenVertexesAndEdges) {
+        Pattern pattern = Pattern.compile("(.+)" + separatorBetweenVertexesAndEdges + "\\[(.+)]");
         Matcher matcher = pattern.matcher(data);
         String vertexString = null, edgeString = null;
         if (matcher.find()) {
@@ -40,13 +75,13 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     }
 
     public static ListDGraph<String> parse(String data) {
-        return parse(data, ", ");
+        return parse(data, SEPARATOR1, SEPARATOR2);
     }
 
     @Override
     public boolean add(V v) {
-        if (v != null && !vertexes.containsKey(v)) {
-            vertexes.put(v, new HashSet<>());
+        if (v != null && !adjMap.containsKey(v)) {
+            adjMap.put(v, new HashSet<>());
             return true;
         }
         return false;
@@ -54,15 +89,15 @@ public class ListDGraph<V> implements DirectedGraph<V> {
 
     @Override
     public boolean add(Edge<V> edge) {
-        if (edge == null || edge.getStart() == null || edge.getEnd() == null || !vertexes.containsKey(edge.getStart()))
+        if (edge == null || edge.getStart() == null || edge.getEnd() == null || !adjMap.containsKey(edge.getStart()))
             return false;
-        return vertexes.get(edge.getStart()).add(edge);
+        return adjMap.get(edge.getStart()).add(edge.getEnd());
     }
 
     @Override
     public V remove(V v) {
-        if (v == null || !vertexes.containsKey(v)) return null; // 不包含此顶点，则没有任何顶点被删除
-        vertexes.remove(v);
+        if (v == null || !adjMap.containsKey(v)) return null; // 不包含此顶点，则没有任何顶点被删除
+        adjMap.remove(v);
         removeRelatedEdges(v);
         return v;
     }
@@ -70,9 +105,7 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     @Override
     public Edge<V> remove(Edge<V> edge) {
         if (edge == null) return null;
-        Set<Edge<V>> edges = vertexes.get(edge.getStart());
-        if (edges == null) return null;
-        return edges.remove(edge) ? edge : null;
+        return adjMap.get(edge.getStart()).remove(edge.getEnd()) ? edge : null;
     }
 
     @Override
@@ -83,13 +116,13 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     @Override
     public List<V> topologicalSort() throws CyclicGraphException {
         // 1. 计算每个顶点的入度（即指向该顶点的边的条数）
-        Map<V, Integer> inDegreeMap = new HashMap<>(vertexes.size());
-        for (V v : vertexes.keySet()) { // 初始化每个顶点的入度为0
+        Map<V, Integer> inDegreeMap = new HashMap<>(adjMap.size());
+        for (V v : adjMap.keySet()) { // 初始化每个顶点的入度为0
             inDegreeMap.put(v, 0);
         }
-        for (V v : vertexes.keySet()) {
-            for (Edge<V> edge : vertexes.get(v)) {
-                inDegreeMap.put(edge.getEnd(), inDegreeMap.get(edge.getEnd()) + 1);
+        for (V v : adjMap.keySet()) {
+            for (V adjV : adjMap.get(v)) {
+                inDegreeMap.put(adjV, inDegreeMap.get(adjV) + 1);
             }
         }
         System.out.println(inDegreeMap);
@@ -105,20 +138,20 @@ public class ListDGraph<V> implements DirectedGraph<V> {
         while (!queue.isEmpty()) {
             V v = queue.poll();
             sorted.add(v);
-            for (Edge<V> edge : vertexes.get(v)) { // 考虑所有与这个入度为零的顶点相邻的顶点
-                V adjV = edge.getEnd();
+            for (V adjV : adjMap.get(v)) { // 考虑所有与这个入度为零的顶点相邻的顶点
                 inDegreeMap.put(adjV, inDegreeMap.get(adjV) - 1); // 将所有相邻顶点入度-1
                 if (inDegreeMap.get(adjV) == 0) queue.offer(adjV); // 将入度降为零的顶点入队
             }
         }
-        if (sorted.size() != vertexes.size()) throw new CyclicGraphException("Cycle found in graph.");
+        if (sorted.size() != adjMap.size()) throw new CyclicGraphException("Cycle found in graph.");
         else return sorted;
     }
 
     /**
      * 获得有向图从{@code start}到{@code end}的所有可能的最短路径
+     *
      * @param start 起点
-     * @param end 终点
+     * @param end   终点
      * @return 最短路径的列表。如果不存在最短路径，返回空列表
      * @throws CyclicGraphException 如果图中有环，抛出异常
      */
@@ -133,17 +166,8 @@ public class ListDGraph<V> implements DirectedGraph<V> {
      */
     private void removeRelatedEdges(V end) {
         if (end == null) return;
-        for (V v : vertexes.keySet()) {
-            removeEdge(vertexes.get(v), end);
-        }
-    }
-
-    private void removeEdge(Set<Edge<V>> adjEdges, V end) {
-        for (Edge<V> edge : adjEdges) {
-            if (edge.getEnd().equals(end)) {
-                adjEdges.remove(edge);
-                break;
-            }
+        for (V v : adjMap.keySet()) {
+            adjMap.get(v).remove(end);
         }
     }
 
@@ -168,8 +192,7 @@ public class ListDGraph<V> implements DirectedGraph<V> {
             // 将以顶点v为顶点的所有边的终点加入队列
             if (start != null) {
                 visited.add(start);
-                for (Edge<V> edge : vertexes.get(start)) {
-                    V end = edge.getEnd();
+                for (V end : adjMap.get(start)) {
                     if (!visited.contains(end) && !remained.contains(end)) {
                         remained.offer(end);
                     }
