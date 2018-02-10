@@ -148,15 +148,95 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     }
 
     /**
-     * 获得有向图从{@code start}到{@code end}的所有可能的最短路径
+     * 获得有向图从{@code from}到{@code to}的所有可能的最短路径
      *
-     * @param start 起点
-     * @param end   终点
+     * @param from 起点
+     * @param to   终点
      * @return 最短路径的列表。如果不存在最短路径，返回空列表
-     * @throws CyclicGraphException 如果图中有环，抛出异常
      */
-    public List<List<V>> unweightedShortestPath(V start, V end) throws CyclicGraphException {
-        throw new UnsupportedOperationException();
+    @Override
+    public List<List<V>> unweightedShortestPath(V from, V to) {
+        List<List<V>> result = new LinkedList<>();
+        if (!adjMap.containsKey(from) || !adjMap.containsKey(to)) return result;
+        if (from.equals(to)) {
+            result.add(new LinkedList<>(Arrays.asList(from)));
+            return result;
+        }
+        Map<V, Set<V>> map = new HashMap<>(); // 新的邻接表
+        Queue<V> queue = new LinkedList<>();
+        queue.offer(from);
+        map.put(from, new HashSet<>());
+        boolean flag = true;
+        while (!queue.isEmpty() && flag) {
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
+                V v = queue.poll();
+                for (V adj : adjMap.get(v)) { // 将v的相邻顶点加入队列
+                    if (to.equals(adj)) flag = false; // 如果本层遇到终点，那么下一层的循环将不会进行，即便相应的顶点已被加入队列
+                    if (!map.containsKey(adj) || to.equals(adj)) map.get(v).add(adj);
+                    if (!map.containsKey(adj)) map.put(adj, new HashSet<>());
+                    queue.offer(adj);
+                }
+            }
+        }
+        constructShortestPathFromAdjacentMap(map, from, to, result, new LinkedList<>());
+        return result;
+    }
+
+    private void constructShortestPathFromAdjacentMap(Map<V, Set<V>> map, V from, V to, List<List<V>> result, LinkedList<V> current) {
+        if (from.equals(to)) { // 回溯出口
+            current.add(to);
+            result.add(new LinkedList<>(current));
+            current.removeLast();
+        } else {
+            current.add(from);
+            for (V adj : map.get(from)) {
+                constructShortestPathFromAdjacentMap(map, adj, to, result, current);
+            }
+            current.removeLast();
+        }
+    }
+
+    /**
+     * 获得有向图从{@code from}到{@code to}的最短路径长度
+     *
+     * @param from 起点
+     * @param to   终点
+     * @return 最短路径长度
+     */
+    @Override
+    public int unweightedShortestPathLength(V from, V to) {
+        if (!adjMap.containsKey(from) || !adjMap.containsKey(to)) return 0;
+        if (from.equals(to)) return 0;
+        Map<V, Integer> map = new HashMap<>();
+        Queue<V> queue = new LinkedList<>();
+        queue.offer(from);
+        map.put(from, 0);
+        boolean flag = true;
+        while (!queue.isEmpty() && flag) {
+            int n = queue.size();
+            for (int i = 0; i < n; i++) {
+                V v = queue.poll();
+                for (V adj : adjMap.get(v)) {
+                    if (to.equals(adj)) flag = false; // 如果以达终点，阻止下一层循环进行
+                    if (!map.containsKey(adj)) {
+                        map.put(adj, map.get(v) + 1);
+                        queue.offer(adj);
+                    }
+                }
+            }
+        }
+        return map.getOrDefault(to, 0);
+    }
+
+    @Override
+    public List<List<V>> weightedShortestPath(V from, V to) {
+        throw new UnsupportedOperationException("Not implemented yet");
+    }
+
+    @Override
+    public double weightedShortestPathWeight(V from, V to) {
+        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     /**

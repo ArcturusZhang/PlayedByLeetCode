@@ -70,4 +70,12 @@ public interface DirectedGraph<V> {
      * @throws CyclicGraphException 当图中含有环时抛出异常
      */
     List<V> topologicalSort() throws CyclicGraphException;
+
+    List<List<V>> unweightedShortestPath(V from, V to);
+
+    int unweightedShortestPathLength(V from, V to);
+
+    List<List<V>> weightedShortestPath(V from, V to);
+
+    double weightedShortestPathWeight(V from, V to);
 }
