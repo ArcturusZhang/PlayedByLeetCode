@@ -1,15 +1,22 @@
 package arcturus.util;
 
 import java.util.Iterator;
+import java.util.List;
 
 public interface DirectedGraph<V> {
     /**
-     * 添加顶点，添加成功返回顶点编号
+     * 添加顶点
      *
      * @param v 要添加的顶点
-     * @return 如果添加成功则返回顶点编号，失败返回-1
+     * @return {@code true}如果添加成功，否则返回{@code false}
      */
-    int add(V v);
+    boolean add(V v);
+
+    default void addAll(V... vs) {
+        for (V v : vs) {
+            add(v);
+        }
+    }
 
     /**
      * 添加一条边
@@ -18,12 +25,6 @@ public interface DirectedGraph<V> {
      * @return {@code true}如果添加成功，否则返回{@code false}
      */
     boolean add(Edge<V> edge);
-
-    default void addAll(V... vs) {
-        for (V v : vs) {
-            add(v);
-        }
-    }
 
     default void addAll(Edge<V>... edges) {
         for (Edge<V> edge : edges) {
@@ -48,30 +49,15 @@ public interface DirectedGraph<V> {
     Edge<V> remove(Edge<V> edge);
 
     /**
-     * 通过编号获得一个顶点
-     *
-     * @param index 顶点编号
-     * @return 对应编号的顶点
-     */
-    V get(int index);
-
-    /**
-     * 通过编号获得一条边
-     *
-     * @param start 边起始顶点的编号
-     * @param end   边结束顶点的编号
-     * @return 对应编号的边
-     */
-    Edge<V> get(int start, int end);
-
-    /**
      * 得到当前图的迭代器
      *
      * @param type 迭代类型
      * @param root 迭代起点
      * @return 迭代器
      */
-    Iterator<V> iterator(IterationType type, V root);
+    default Iterator<V> iterator(IterationType type, V root) {
+        return iterator(root);
+    }
 
     /**
      * 得到当前图的默认模式迭代器
@@ -80,4 +66,12 @@ public interface DirectedGraph<V> {
      * @return 迭代器
      */
     Iterator<V> iterator(V root);
+
+    /**
+     * 返回有向图的一个拓扑排序
+     *
+     * @return 有向图的拓扑排序
+     * @throws CyclicGraphException 当图中含有环时抛出异常
+     */
+    List<V> topologicalSort() throws CyclicGraphException;
 }
