@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
 public class ListDGraph<V> implements DirectedGraph<V> {
     public static final String SEPARATOR1 = ", ";
     public static final String SEPARATOR2 = "; ";
-    private Map<V, Set<V>> adjMap;
+    private Map<V, Set<Edge<V>>> adjMap;
 
     /**
      * 返回一个空的有向图
@@ -26,7 +26,7 @@ public class ListDGraph<V> implements DirectedGraph<V> {
      *
      * @param adjMap 邻接表
      */
-    public ListDGraph(Map<V, Set<V>> adjMap) {
+    public ListDGraph(Map<V, Set<Edge<V>>> adjMap) {
         this.adjMap = adjMap;
     }
 
@@ -91,7 +91,7 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     public boolean add(Edge<V> edge) {
         if (edge == null || edge.getStart() == null || edge.getEnd() == null || !adjMap.containsKey(edge.getStart()))
             return false;
-        return adjMap.get(edge.getStart()).add(edge.getEnd());
+        return adjMap.get(edge.getStart()).add(edge);
     }
 
     @Override
@@ -105,7 +105,7 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     @Override
     public Edge<V> remove(Edge<V> edge) {
         if (edge == null) return null;
-        return adjMap.get(edge.getStart()).remove(edge.getEnd()) ? edge : null;
+        return adjMap.get(edge.getStart()).remove(edge) ? edge : null;
     }
 
     @Override
@@ -121,7 +121,8 @@ public class ListDGraph<V> implements DirectedGraph<V> {
             inDegreeMap.put(v, 0);
         }
         for (V v : adjMap.keySet()) {
-            for (V adjV : adjMap.get(v)) {
+            for (Edge<V> edge : adjMap.get(v)) {
+                V adjV = edge.getEnd();
                 inDegreeMap.put(adjV, inDegreeMap.get(adjV) + 1);
             }
         }
@@ -138,7 +139,8 @@ public class ListDGraph<V> implements DirectedGraph<V> {
         while (!queue.isEmpty()) {
             V v = queue.poll();
             sorted.add(v);
-            for (V adjV : adjMap.get(v)) { // 考虑所有与这个入度为零的顶点相邻的顶点
+            for (Edge<V> edge : adjMap.get(v)) { // 考虑所有与这个入度为零的顶点相邻的顶点
+                V adjV = edge.getEnd();
                 inDegreeMap.put(adjV, inDegreeMap.get(adjV) - 1); // 将所有相邻顶点入度-1
                 if (inDegreeMap.get(adjV) == 0) queue.offer(adjV); // 将入度降为零的顶点入队
             }
@@ -171,14 +173,17 @@ public class ListDGraph<V> implements DirectedGraph<V> {
             int n = queue.size();
             for (int i = 0; i < n; i++) {
                 V v = queue.poll();
-                for (V adj : adjMap.get(v)) { // 将v的相邻顶点加入队列
-                    if (to.equals(adj)) flag = false; // 如果本层遇到终点，那么下一层的循环将不会进行，即便相应的顶点已被加入队列
-                    if (!map.containsKey(adj) || to.equals(adj)) map.get(v).add(adj);
-                    if (!map.containsKey(adj)) map.put(adj, new HashSet<>());
-                    queue.offer(adj);
+                for (Edge<V> edge : adjMap.get(v)) { // 将v的相邻顶点加入队列
+                    V adjV = edge.getEnd();
+                    if (to.equals(adjV)) flag = false; // 如果本层遇到终点，那么下一层的循环将不会进行，即便相应的顶点已被加入队列
+                    if (!map.containsKey(adjV) || to.equals(adjV)) map.get(v).add(adjV);
+                    if (!map.containsKey(adjV)) map.put(adjV, new HashSet<>());
+                    queue.offer(adjV);
                 }
             }
         }
+        // BFS确定最短路径上的邻接表（及最短路径长度），然后再利用DFS和求得的邻接表具体求最短路径。
+        // 对于较复杂的问题，直接使用DFS寻找最短路径将面临内存不足的问题（时间复杂度是大致相当的）
         constructShortestPathFromAdjacentMap(map, from, to, result, new LinkedList<>());
         return result;
     }
@@ -217,11 +222,12 @@ public class ListDGraph<V> implements DirectedGraph<V> {
             int n = queue.size();
             for (int i = 0; i < n; i++) {
                 V v = queue.poll();
-                for (V adj : adjMap.get(v)) {
-                    if (to.equals(adj)) flag = false; // 如果以达终点，阻止下一层循环进行
-                    if (!map.containsKey(adj)) {
-                        map.put(adj, map.get(v) + 1);
-                        queue.offer(adj);
+                for (Edge<V> edge : adjMap.get(v)) {
+                    V adjV = edge.getEnd();
+                    if (to.equals(adjV)) flag = false; // 如果以达终点，阻止下一层循环进行
+                    if (!map.containsKey(adjV)) {
+                        map.put(adjV, map.get(v) + 1);
+                        queue.offer(adjV);
                     }
                 }
             }
@@ -247,7 +253,12 @@ public class ListDGraph<V> implements DirectedGraph<V> {
     private void removeRelatedEdges(V end) {
         if (end == null) return;
         for (V v : adjMap.keySet()) {
-            adjMap.get(v).remove(end);
+            for (Edge<V> edge : adjMap.get(v)) {
+                if (edge.getEnd().equals(end)) {
+                    adjMap.get(v).remove(edge);
+                    break;
+                }
+            }
         }
     }
 
@@ -272,7 +283,8 @@ public class ListDGraph<V> implements DirectedGraph<V> {
             // 将以顶点v为顶点的所有边的终点加入队列
             if (start != null) {
                 visited.add(start);
-                for (V end : adjMap.get(start)) {
+                for (Edge<V> edge : adjMap.get(start)) {
+                    V end = edge.getEnd();
                     if (!visited.contains(end) && !remained.contains(end)) {
                         remained.offer(end);
                     }
