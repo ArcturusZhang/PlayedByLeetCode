@@ -126,6 +126,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Linked List |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
+| 143 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Linked List |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Binary Tree Traversal |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/description/) | Merge Sort |
