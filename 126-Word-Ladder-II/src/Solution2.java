@@ -5,6 +5,8 @@ public class Solution2 extends Solution {
      * 记忆化搜索。将127中的BFS与DFS结合以降低DFS的复杂度，减少无用的分支。
      * 先利用与127题类似的方法查找最短路径，同时将查找得到的可行路径储存为一个map。
      * 然后利用回溯法和刚刚得到的map来给出所有的最短路径，不需要再重新遍历所有可能的路径。
+     *
+     * 加注：这里利用了图的最短路径算法和邻接表的概念。先使用BFS遍历所有可能的路径，构造从开始到末尾的邻接表。然后依据邻接表和DFS得到所有可能的最短路径
      * @param beginWord
      * @param endWord
      * @param wordList

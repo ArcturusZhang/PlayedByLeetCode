@@ -121,24 +121,29 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | BFS & DFS, Graph (optimal path) |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Sorting, Hash Table |
-| 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, XOR |
+| 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, Bit Manipulation |
+| 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/description/) | Hash Table, Bit Manipulation |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Linked List |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
+| 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Binary Tree Traversal |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/description/) | Merge Sort |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | Math |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Hash Map |
 | 171 | [Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/description/) | Math |
 | 173 | [Binary Search Tree Iterator](https://leetcode.com/problems/binary-search-tree-iterator/description/) | Binary Tree Inorder Traversal |
+| 174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game/description/) | Dynamic Programming |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) | Dynamic Programming |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
+| 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) | Linked List |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Linked List, Stack |
+| 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | Trie |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |
