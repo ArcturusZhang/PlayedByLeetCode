@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Solution1 extends Solution {
     /**
      * 首先将链表从正中间断开，然后将后半段倒序，再合并即可
+     *
      * @param head
      */
     @Override
