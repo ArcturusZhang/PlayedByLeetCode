@@ -177,6 +177,7 @@ public class ListNode implements Cloneable {
 
     /**
      * 从当前节点开始，排序后续的链表。
+     *
      * @return 排序后链表的头节点
      * @throws CyclicListException 当链表中有环时抛出异常
      */
@@ -219,5 +220,18 @@ public class ListNode implements Cloneable {
             pnode.next = head2;
         }
         return phead.next;
+    }
+
+    /**
+     * 将给定的链表接续在本链表末尾
+     *
+     * @param head
+     * @return
+     * @throws CyclicListException
+     */
+    public ListNode append(ListNode head) throws CyclicListException {
+        ListNode tail = this.last();
+        tail.next = head;
+        return this;
     }
 }

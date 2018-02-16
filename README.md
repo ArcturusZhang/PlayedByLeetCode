@@ -130,6 +130,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/description/) | Binary Tree Traversal |
 | 145 | [Binary Tree Postorder Traversal](https://leetcode.com/problems/binary-tree-postorder-traversal/description/) | Binary Tree Traversal |
 | 148 | [Sort List](https://leetcode.com/problems/sort-list/description/) | Merge Sort |
+| 160 | [Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/description/) | Hash Table, Linked List |
 | 167 | [Two Sum II - Input array is sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/) | Binary Search |
 | 168 | [Excel Sheet Column Title](https://leetcode.com/problems/excel-sheet-column-title/description/) | Math |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/description/) | Hash Map |
@@ -138,7 +139,11 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 174 | [Dungeon Game](https://leetcode.com/problems/dungeon-game/description/) | Dynamic Programming |
 | 179 | [Largest Number](https://leetcode.com/problems/largest-number/description/) | Sort |
 | 188 | [Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/description/) | Dynamic Programming |
+| 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/description/) | Arrays |
+| 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Bit Manipulation |
+| 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) | Bit Manipulation |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
+| 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) | Bit Manipulation |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
 | 203 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) | Linked List |
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
