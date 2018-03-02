@@ -84,13 +84,16 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 082 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/description/) | Linked List |
 | 083 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/description/) | Linked List |
 | 085 | [Maximal Rectangle](https://leetcode.com/problems/maximal-rectangle/description/) | Dynamic Programming |
-| 086 | [Partition List](https://leetcode.com/problems/partition-list/description/) | Brutal Force |
+| 086 | [Partition List](https://leetcode.com/problems/partition-list/description/) | Linked List |
+| 087 | [Scramble String](https://leetcode.com/problems/scramble-string/description/) | Dynamic Programming |
 | 089 | [Gray Code](https://leetcode.com/problems/gray-code/description/) | Bit Manipulation, Brutal Force |
 | 090 | [Subsets II](https://leetcode.com/problems/subsets-ii/description/) | Backtracking (DFS) |
 | 091 | [Decode Ways](https://leetcode.com/problems/decode-ways/description/) | Backtracking, Dynamic Programming |
 | 092 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/) | Stack |
 | 093 | [Restore IP Addresses](https://leetcode.com/problems/restore-ip-addresses/description/) | Backtracking (DFS) |
 | 094 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Binary Tree Traversal |
+| 095 | [Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/) | |
+| 096 | [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/description/) | Dynamic Programming |
 | 098 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/) | Binary Tree Traversal |
 | 099 | [Recover Binary Search Tree](https://leetcode.com/problems/recover-binary-search-tree/description/) | Binary Tree Traversal |
 | 100 | [Same Tree](https://leetcode.com/problems/same-tree/description/) | Binary Tree |
