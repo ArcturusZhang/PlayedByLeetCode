@@ -214,4 +214,21 @@ public class ArrayUtils {
     public static char[][] gridConstructor(String data) throws FormatException {
         return gridConstructor(data, GRID_SEPARATOR);
     }
+
+    public static String gridToString(char[][] grid, String separator) {
+        if (grid.length == 0) return "";
+        StringBuilder sb = new StringBuilder();
+        for (int row = 0; row < grid.length; row++) {
+            for (int col = 0; col < grid[0].length; col++) {
+                sb.append(grid[row][col]);
+                if (col < grid[0].length - 1) sb.append(separator);
+            }
+            if (row < grid.length - 1) sb.append("\n");
+        }
+        return sb.toString();
+    }
+
+    public static String gridToString(char[][] grid) {
+        return gridToString(grid, GRID_SEPARATOR);
+    }
 }
