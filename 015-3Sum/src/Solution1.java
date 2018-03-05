@@ -13,7 +13,7 @@ public class Solution1 extends Solution {
     @Override
     public List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer>> result = new HashSet<>();
-        if (nums == null || nums.length < 3) return new ArrayList<>(result);
+        if (nums == null || nums.length < 3) return new ArrayList<>();
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {
             if (nums[i] > 0) break;
