@@ -146,6 +146,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/description/) | Arrays |
 | 190 | [Reverse Bits](https://leetcode.com/problems/reverse-bits/description/) | Bit Manipulation |
 | 191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/description/) | Bit Manipulation |
+| 198 | [House Robber](https://leetcode.com/problems/house-robber/description/) | Dynamic Programming |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/description/) | DFS, BFS |
 | 201 | [Bitwise AND of Numbers Range](https://leetcode.com/problems/bitwise-and-of-numbers-range/description/) | Bit Manipulation |
 | 202 | [Happy Number](https://leetcode.com/problems/happy-number/description/) | Hash Table |
