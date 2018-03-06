@@ -102,7 +102,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 103 | [Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/description/) | Binary Tree Traversal |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/) | Binary Tree |
 | 105 | [Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/) | Binary Tree Traversal |
-| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | Binary Tree Traversal | 
+| 106 | [Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/description/) | Binary Tree Traversal |
 | 107 | [Binary Tree Level Order Traversal II](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/) | Binary Tree Traversal |
 | 108 | [Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/) | Binary Tree |
 | 109 | [Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/description/) | Binary Tree & Linked List |
@@ -154,6 +154,13 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Linked List, Stack |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | Trie |
+| 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/description/) | Backtracking (DFS), Trie |
+| 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/description/) | Dynamic Programming |
+| 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | Stack, Queue |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
+| 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Binary Tree Traversal |
+| 231 | [Power of Two](https://leetcode.com/problems/power-of-two/description/) | Bit Manipulation |
+| 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Stack, Queue |
+| 268 | [Missing Number](https://leetcode.com/problems/missing-number/description/) | Math, Bit Manipulation |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |

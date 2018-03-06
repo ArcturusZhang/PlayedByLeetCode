@@ -1,9 +1,9 @@
 package arcturus.util;
 
 public interface Trie {
-    void insert(String word);
+    void insert(CharSequence word);
 
-    boolean search(String word);
+    boolean search(CharSequence word);
 
-    boolean startsWith(String prefix);
+    boolean startsWith(CharSequence prefix);
 }

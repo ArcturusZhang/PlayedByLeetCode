@@ -2,30 +2,22 @@ package arcturus.util;
 
 public class ArrayTrie implements Trie {
     private TrieNode root;
-    private boolean caseSensitive;
 
     public ArrayTrie() {
-        caseSensitive = false;
-        root = new TrieNode('0', caseSensitive);
-    }
-
-    public ArrayTrie(boolean caseSensitive) {
-        this.caseSensitive = caseSensitive;
-        root = new TrieNode('0', caseSensitive);
+        root = new TrieNode('0');
     }
 
     @Override
-    public void insert(String word) {
+    public void insert(CharSequence word) {
         if (word == null) return;
-        if (!caseSensitive) word = word.toUpperCase();
         insertNode(root, word, 0);
     }
 
-    private void insertNode(TrieNode node, String word, int start) {
+    private void insertNode(TrieNode node, CharSequence word, int start) {
         if (start == word.length()) return;
         int k = word.charAt(start) - 'A';
         if (node.children[k] == null) {
-            node.children[k] = new TrieNode(word.charAt(start), caseSensitive);
+            node.children[k] = new TrieNode(word.charAt(start));
         }
         if (start == word.length() - 1) {
             node.children[k].freq++;
@@ -34,9 +26,8 @@ public class ArrayTrie implements Trie {
     }
 
     @Override
-    public boolean search(String word) {
+    public boolean search(CharSequence word) {
         TrieNode node = root;
-        if (!caseSensitive) word = word.toUpperCase();
         for (int i = 0; i < word.length(); i++) {
             int k = word.charAt(i) - 'A';
             if (node.children[k] == null) return false;
@@ -46,9 +37,8 @@ public class ArrayTrie implements Trie {
     }
 
     @Override
-    public boolean startsWith(String prefix) {
+    public boolean startsWith(CharSequence prefix) {
         TrieNode node = root;
-        if (!caseSensitive) prefix = prefix.toUpperCase();
         for (int i = 0; i < prefix.length(); i++) {
             int k = prefix.charAt(i) - 'A';
             if (node.children[k] == null) return false;
@@ -62,10 +52,9 @@ public class ArrayTrie implements Trie {
         TrieNode[] children;
         int freq;
 
-        TrieNode(char c, boolean caseSensitive) {
+        TrieNode(char c) {
             this.c = c;
-            if (caseSensitive) children = new TrieNode[56];
-            else children = new TrieNode[26];
+            children = new TrieNode[26];
             freq = 0;
         }
     }
