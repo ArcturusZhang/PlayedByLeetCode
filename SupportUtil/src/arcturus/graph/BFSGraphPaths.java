@@ -4,13 +4,13 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class BreadthFirstPaths implements GraphPaths {
+public class BFSGraphPaths implements GraphPaths {
     private final boolean[] visited;
     private final int[] edgeTo;
     private final int[] distTo;
     private final int source;
 
-    public BreadthFirstPaths(Graph graph, int source) {
+    public BFSGraphPaths(Graph graph, int source) {
         this.visited = new boolean[graph.vertexesCount()];
         this.edgeTo = new int[graph.vertexesCount()];
         this.distTo = new int[graph.vertexesCount()];

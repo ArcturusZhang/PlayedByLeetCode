@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * 二叉树类，不加任何限制的二叉树
  */
-public class TreeNode {
+public class TreeNode implements Cloneable {
     public static final String NULL_STRING = "#";
     public static final String SEPARATOR = ", ";
     public int val;
@@ -281,7 +281,8 @@ public class TreeNode {
     }
 
     @Override
-    public TreeNode clone() {
+    public TreeNode clone() throws CloneNotSupportedException {
+        super.clone();
         TreeNode newNode = new TreeNode(this.val);
         if (this.left != null) newNode.left = this.left.clone();
         if (this.right != null) newNode.right = this.right.clone();

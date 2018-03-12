@@ -3,12 +3,12 @@ package arcturus.graph;
 import java.util.LinkedList;
 import java.util.List;
 
-public class DepthFirstPaths implements GraphPaths {
+public class DFSGraphPaths implements GraphPaths {
     private final boolean[] visited;
     private final int[] edgeTo;
     private final int source;
 
-    public DepthFirstPaths(Graph graph, int source) {
+    public DFSGraphPaths(Graph graph, int source) {
         this.visited = new boolean[graph.vertexesCount()];
         this.edgeTo = new int[graph.vertexesCount()];
         this.source = source;

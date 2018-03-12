@@ -168,7 +168,8 @@ public class ListNode implements Cloneable {
     }
 
     @Override
-    public ListNode clone() throws CyclicListException {
+    public ListNode clone() throws CyclicListException, CloneNotSupportedException {
+        super.clone();
         if (this.hasCycle()) throw new CyclicListException();
         ListNode newNode = new ListNode(this.val);
         if (this.next != null) newNode.next = this.next.clone();

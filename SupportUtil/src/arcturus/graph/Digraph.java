@@ -3,33 +3,29 @@ package arcturus.graph;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Graph {
+public class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
     private final int vertexes;
     private int edges;
     private final List<Integer>[] adj;
+    private final int[] indegree;
 
-    public Graph(int V) {
+    public Digraph(int V) {
         this.vertexes = V;
         this.edges = 0;
         this.adj = (List<Integer>[]) new ArrayList[V];
+        this.indegree = new int[V];
         for (int v = 0; v < vertexes; v++) {
             adj[v] = new ArrayList<>();
         }
     }
 
-    /**
-     * Add an edge to this graph. (parallel edges allowed)
-     *
-     * @param v source vertex of the edge
-     * @param w destination vertex of the edge
-     */
     public void addEdge(int v, int w) {
         validateVertex(v);
         validateVertex(w);
         adj[v].add(w);
-        adj[w].add(v);
         edges++;
+        indegree[w]++;
     }
 
     public List<Integer> adjacencies(int v) {
@@ -45,9 +41,14 @@ public class Graph {
         return edges;
     }
 
-    public int degree(int v) {
+    public int outdegree(int v) {
         validateVertex(v);
         return adj[v].size();
+    }
+
+    public int indegree(int v) {
+        validateVertex(v);
+        return indegree[v];
     }
 
     private void validateVertex(int v) {
@@ -55,28 +56,14 @@ public class Graph {
             throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertexes - 1));
     }
 
-    public static int degree(Graph G, int v) {
-        return G.degree(v);
-    }
-
-    public static int maxDegree(Graph G) {
-        int max = 0;
-        for (int v = 0; v < G.vertexesCount(); v++) {
-            if (degree(G, v) > max) max = degree(G, v);
+    public Digraph reverse() {
+        Digraph reverse = new Digraph(vertexes);
+        for (int v = 0; v < vertexes; v++) {
+            for (int w : adjacencies(v)) {
+                reverse.addEdge(w, v);
+            }
         }
-        return max;
-    }
-
-    public static double averageDegree(Graph G) {
-        return 2.0 * G.edgesCount() / G.vertexesCount();
-    }
-
-    public static int numberOfSelfLoops(Graph G) {
-        int count = 0;
-        for (int v = 0; v < G.vertexesCount(); v++) {
-            for (int w : G.adjacencies(v)) if (v == w) count++;
-        }
-        return count / 2;
+        return reverse;
     }
 
     @Override
@@ -84,9 +71,9 @@ public class Graph {
         StringBuilder s = new StringBuilder();
         s.append(vertexes).append(" vertices, ").append(edges).append(" edges ").append(NEWLINE);
         for (int v = 0; v < vertexes; v++) {
-            s.append(v).append(": ");
+            s.append(String.format("%d: ", v));
             for (int w : adj[v]) {
-                s.append(w).append(" ");
+                s.append(String.format("%d ", w));
             }
             s.append(NEWLINE);
         }
