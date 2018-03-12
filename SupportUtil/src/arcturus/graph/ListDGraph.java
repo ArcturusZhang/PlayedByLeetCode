@@ -1,4 +1,6 @@
-package arcturus.util;
+package arcturus.graph;
+
+import arcturus.util.FormatException;
 
 import java.util.*;
 import java.util.regex.Matcher;
@@ -9,6 +11,7 @@ import java.util.regex.Pattern;
  *
  * @param <V> 顶点类型
  */
+@Deprecated
 public class ListDGraph<V> implements DirectedGraph<V> {
     public static final String SEPARATOR1 = ", ";
     public static final String SEPARATOR2 = "; ";

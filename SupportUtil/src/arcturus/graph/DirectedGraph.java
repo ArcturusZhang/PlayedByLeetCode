@@ -1,8 +1,11 @@
-package arcturus.util;
+package arcturus.graph;
+
+import arcturus.util.IterationType;
 
 import java.util.Iterator;
 import java.util.List;
 
+@Deprecated
 public interface DirectedGraph<V> {
     /**
      * 添加顶点

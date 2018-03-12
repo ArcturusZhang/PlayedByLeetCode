@@ -1,4 +1,4 @@
-package arcturus.util;
+package arcturus.graph;
 
 public class CyclicGraphException extends RuntimeException {
     public CyclicGraphException() {

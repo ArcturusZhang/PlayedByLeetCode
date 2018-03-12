@@ -1,9 +1,12 @@
-package arcturus.util;
+package arcturus.graph;
+
+import arcturus.util.FormatException;
 
 /**
  * 图的一条边
  * @param <V> 图的顶点的数据类型
  */
+@Deprecated
 public class Edge<V> {
     private V start;
     private V end;
