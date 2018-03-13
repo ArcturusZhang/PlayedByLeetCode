@@ -1,9 +1,6 @@
 package arcturus.util;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 /**
  * 二叉树类，不加任何限制的二叉树
@@ -287,5 +284,25 @@ public class TreeNode implements Cloneable {
         if (this.left != null) newNode.left = this.left.clone();
         if (this.right != null) newNode.right = this.right.clone();
         return newNode;
+    }
+
+    /**
+     * 返回树中值为给定值的（按中序遍历排列的第一个）节点
+     * @param val 查找的值
+     * @return 查找值对应的节点，如不存在返回{@code null}
+     */
+    public TreeNode getForValue(int val) {
+        TreeNode node = this;
+        Stack<TreeNode> stack = new Stack<>();
+        while (node != null || !stack.isEmpty()) {
+            while (node != null) {
+                stack.push(node);
+                node = node.left;
+            }
+            node = stack.pop();
+            if (node.val == val) break;
+            node = node.right;
+        }
+        return node;
     }
 }

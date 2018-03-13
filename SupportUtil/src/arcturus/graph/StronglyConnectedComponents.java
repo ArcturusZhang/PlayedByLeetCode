@@ -1,14 +1,17 @@
 package arcturus.graph;
 
-public class ConnectedComponents {
+import java.util.List;
+
+public class StronglyConnectedComponents {
     private boolean[] visited;
     private int[] id;
     private int count;
-    public ConnectedComponents(Graph graph) {
+    public StronglyConnectedComponents(Digraph graph) {
         visited = new boolean[graph.vertexesCount()];
         id = new int[graph.vertexesCount()];
         count = 0;
-        for (int v = 0; v < graph.vertexesCount(); v++) {
+        List<Integer> reverseOrder = new DFSReverseOrder(graph.reverse()).reversePost();
+        for (int v : reverseOrder) {
             if (!visited[v]) {
                 dfs(graph, v);
                 count++;
@@ -16,7 +19,7 @@ public class ConnectedComponents {
         }
     }
 
-    private void dfs(Graph graph, int v) {
+    private void dfs(Digraph graph, int v) {
         visited[v] = true;
         id[v] = count;
         for (int w : graph.adjacencies(v)) {
@@ -24,7 +27,7 @@ public class ConnectedComponents {
         }
     }
 
-    public boolean connected(int v, int w) {
+    public boolean stronglyConnected(int v, int w) {
         return id[v] == id[w];
     }
 
