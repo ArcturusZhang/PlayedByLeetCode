@@ -160,6 +160,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/description/) | Backtracking (DFS), Trie |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/description/) | Dynamic Programming |
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | Stack, Queue |
+| 234 | [Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/) | Linked List |
 | 235 | [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/) | Binary Tree |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/) | Binary Tree |
 | 297 | [Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/) | BFS |
