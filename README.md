@@ -167,6 +167,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 231 | [Power of Two](https://leetcode.com/problems/power-of-two/description/) | Bit Manipulation |
 | 232 | [Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/description/) | Stack, Queue |
 | 268 | [Missing Number](https://leetcode.com/problems/missing-number/description/) | Math, Bit Manipulation |
+| 287 | [Find the Duplicated Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | Brutal Force, Two Pointers, Divide and Conquer |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 476 | [Number Complement](https://leetcode.com/problems/number-complement/description/) | Bit Manipulation |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |
