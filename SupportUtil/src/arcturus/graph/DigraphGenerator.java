@@ -141,8 +141,8 @@ public class DigraphGenerator {
      */
     public static Digraph tournament(int V) {
         Digraph G = new Digraph(V);
-        for (int v = 0; v < G.vertexesCount(); v++) {
-            for (int w = v+1; w < G.vertexesCount(); w++) {
+        for (int v = 0; v < G.verticesCount(); v++) {
+            for (int w = v+1; w < G.verticesCount(); w++) {
                 if (StdRandom.bernoulli(0.5)) G.addEdge(v, w);
                 else                          G.addEdge(w, v);
             }
@@ -397,7 +397,7 @@ public class DigraphGenerator {
         for (int i = 0; i < c; i++) {
             // how many vertices in component c
             int count = 0;
-            for (int v = 0; v < G.vertexesCount(); v++) {
+            for (int v = 0; v < G.verticesCount(); v++) {
                 if (label[v] == i) count++;
             }
 

@@ -397,7 +397,7 @@ public class GraphGenerator {
         for (int v = 0; v < V; v++)
             if (degree[v] == 1) pq.offer(v);
 
-        // repeatedly delMin() degree 1 vertex that has the minimum index
+        // repeatedly poll() degree 1 vertex that has the minimum index
         for (int i = 0; i < V-2; i++) {
             int v = pq.poll();
             G.addEdge(v, prufer[i]);

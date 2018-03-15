@@ -7,9 +7,9 @@ public class DFSReverseOrder {
     private boolean[] visited;
     private LinkedList<Integer> reverseOrder;
     public DFSReverseOrder(Digraph graph) {
-        visited = new boolean[graph.vertexesCount()];
+        visited = new boolean[graph.verticesCount()];
         reverseOrder = new LinkedList<>();
-        for (int v = 0; v < graph.vertexesCount(); v++)
+        for (int v = 0; v < graph.verticesCount(); v++)
             if (!visited[v]) dfs(graph, v);
     }
 

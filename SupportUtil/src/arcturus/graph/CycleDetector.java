@@ -4,24 +4,24 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class CycleDetector {
-    private boolean[] visited, inlist;
+    private boolean[] visited, inList;
     private int[] edgeTo;
     private LinkedList<Integer> cycle = null;
 
     public CycleDetector(Graph graph) {
         if (hasSelfLoop(graph)) return;
         if (hasParallelEdges(graph)) return;
-        visited = new boolean[graph.vertexesCount()];
-        edgeTo = new int[graph.vertexesCount()];
-        for (int v = 0; v < graph.vertexesCount(); v++)
+        visited = new boolean[graph.verticesCount()];
+        edgeTo = new int[graph.verticesCount()];
+        for (int v = 0; v < graph.verticesCount(); v++)
             if (!visited[v]) dfs(graph, -1, v);
     }
 
     public CycleDetector(Digraph graph) {
-        visited = new boolean[graph.vertexesCount()];
-        inlist = new boolean[graph.vertexesCount()];
-        edgeTo = new int[graph.vertexesCount()];
-        for (int v = 0; v < graph.vertexesCount(); v++)
+        visited = new boolean[graph.verticesCount()];
+        inList = new boolean[graph.verticesCount()];
+        edgeTo = new int[graph.verticesCount()];
+        for (int v = 0; v < graph.verticesCount(); v++)
             if (!visited[v] && cycle == null) dfs(graph, v);
     }
 
@@ -70,14 +70,14 @@ public class CycleDetector {
     }
 
     private void dfs(Digraph graph, int v) {
-        inlist[v] = true;
+        inList[v] = true;
         visited[v] = true;
         for (int w : graph.adjacencies(v)) {
             if (cycle != null) return;
             if (!visited[w]) {
                 edgeTo[w] = v;
                 dfs(graph, w);
-            } else if (inlist[w]) {
+            } else if (inList[w]) {
                 cycle = new LinkedList<>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.addFirst(x);
@@ -86,11 +86,11 @@ public class CycleDetector {
                 cycle.addFirst(v);
             }
         }
-        inlist[v] = false;
+        inList[v] = false;
     }
 
     private boolean hasSelfLoop(Graph graph) {
-        for (int v = 0; v < graph.vertexesCount(); v++) {
+        for (int v = 0; v < graph.verticesCount(); v++) {
             for (int w : graph.adjacencies(v)) {
                 if (v == w) {
                     cycle = new LinkedList<>();
@@ -104,8 +104,8 @@ public class CycleDetector {
     }
 
     private boolean hasParallelEdges(Graph graph) {
-        visited = new boolean[graph.vertexesCount()];
-        for (int v = 0; v < graph.vertexesCount(); v++) {
+        visited = new boolean[graph.verticesCount()];
+        for (int v = 0; v < graph.verticesCount(); v++) {
             for (int w : graph.adjacencies(v)) {
                 if (visited[w]) {
                     cycle = new LinkedList<>();

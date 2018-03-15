@@ -5,15 +5,15 @@ import java.util.List;
 
 public class Graph {
     private static final String NEWLINE = System.getProperty("line.separator");
-    private final int vertexes;
+    private final int vertices;
     private int edges;
     private final List<Integer>[] adj;
 
     public Graph(int V) {
-        this.vertexes = V;
+        this.vertices = V;
         this.edges = 0;
         this.adj = (List<Integer>[]) new ArrayList[V];
-        for (int v = 0; v < vertexes; v++) {
+        for (int v = 0; v < vertices; v++) {
             adj[v] = new ArrayList<>();
         }
     }
@@ -37,8 +37,8 @@ public class Graph {
         return adj[v];
     }
 
-    public int vertexesCount() {
-        return vertexes;
+    public int verticesCount() {
+        return vertices;
     }
 
     public int edgesCount() {
@@ -51,8 +51,8 @@ public class Graph {
     }
 
     private void validateVertex(int v) {
-        if (v < 0 || v >= vertexes)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertexes - 1));
+        if (v < 0 || v >= vertices)
+            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (vertices - 1));
     }
 
     public static int degree(Graph G, int v) {
@@ -61,19 +61,19 @@ public class Graph {
 
     public static int maxDegree(Graph G) {
         int max = 0;
-        for (int v = 0; v < G.vertexesCount(); v++) {
+        for (int v = 0; v < G.verticesCount(); v++) {
             if (degree(G, v) > max) max = degree(G, v);
         }
         return max;
     }
 
     public static double averageDegree(Graph G) {
-        return 2.0 * G.edgesCount() / G.vertexesCount();
+        return 2.0 * G.edgesCount() / G.verticesCount();
     }
 
     public static int numberOfSelfLoops(Graph G) {
         int count = 0;
-        for (int v = 0; v < G.vertexesCount(); v++) {
+        for (int v = 0; v < G.verticesCount(); v++) {
             for (int w : G.adjacencies(v)) if (v == w) count++;
         }
         return count / 2;
@@ -82,8 +82,8 @@ public class Graph {
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
-        s.append(vertexes).append(" vertices, ").append(edges).append(" edges ").append(NEWLINE);
-        for (int v = 0; v < vertexes; v++) {
+        s.append(vertices).append(" vertices, ").append(edges).append(" edges ").append(NEWLINE);
+        for (int v = 0; v < vertices; v++) {
             s.append(v).append(": ");
             for (int w : adj[v]) {
                 s.append(w).append(" ");

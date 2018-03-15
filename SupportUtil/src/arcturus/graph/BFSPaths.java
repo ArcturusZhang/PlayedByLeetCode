@@ -11,12 +11,12 @@ public class BFSPaths implements Paths {
     private int source;
 
     public BFSPaths(Graph graph, int source) {
-        initialize(graph.vertexesCount(), source);
+        initialize(graph.verticesCount(), source);
         bfs(graph);
     }
 
     public BFSPaths(Digraph digraph, int source) {
-        initialize(digraph.vertexesCount(), source);
+        initialize(digraph.verticesCount(), source);
         bfs(digraph);
     }
 

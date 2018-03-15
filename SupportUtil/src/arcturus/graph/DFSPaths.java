@@ -9,12 +9,12 @@ public class DFSPaths implements Paths {
     private int source;
 
     public DFSPaths(Graph graph, int source) {
-        initialize(graph.vertexesCount(), source);
+        initialize(graph.verticesCount(), source);
         dfs(graph, source);
     }
 
     public DFSPaths(Digraph digraph, int source) {
-        initialize(digraph.vertexesCount(), source);
+        initialize(digraph.verticesCount(), source);
         dfs(digraph, source);
     }
 

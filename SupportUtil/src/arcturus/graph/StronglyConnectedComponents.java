@@ -7,8 +7,8 @@ public class StronglyConnectedComponents {
     private int[] id;
     private int count;
     public StronglyConnectedComponents(Digraph graph) {
-        visited = new boolean[graph.vertexesCount()];
-        id = new int[graph.vertexesCount()];
+        visited = new boolean[graph.verticesCount()];
+        id = new int[graph.verticesCount()];
         count = 0;
         List<Integer> reverseOrder = new DFSReverseOrder(graph.reverse()).reversePost();
         for (int v : reverseOrder) {
