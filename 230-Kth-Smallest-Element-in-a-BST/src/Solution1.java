@@ -5,6 +5,7 @@ import java.util.Stack;
 public class Solution1 extends Solution {
     /**
      * 二叉树中序遍历的修改版本
+	 利用二叉查找树的中序遍历，同时维护一个变量计数。中序遍历得到的是二叉查找树按元素顺序的列表，通过计数变量即可找到第k小的元素。
      * @param root
      * @param k
      * @return
