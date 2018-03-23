@@ -175,6 +175,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 287 | [Find the Duplicated Number](https://leetcode.com/problems/find-the-duplicate-number/description/) | Brutal Force, Two Pointers, Divide and Conquer |
 | 292 | [Nim Game](https://leetcode.com/problems/nim-game/description/) | Math |
 | 371 | [Sum of Two Integers](https://leetcode.com/problems/sum-of-two-integers/description/) | Bit Manipulation |
+| 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) | Dynamic Programming |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 476 | [Number Complement](https://leetcode.com/problems/number-complement/description/) | Bit Manipulation |
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/) | Backtracking (DFS) |
