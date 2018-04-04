@@ -124,6 +124,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 126 | [Word Ladder II](https://leetcode.com/problems/word-ladder-ii/description/) | BFS & DFS, Graph (optimal path) |
 | 127 | [Word Ladder](https://leetcode.com/problems/word-ladder/description/) | BFS |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/description/) | Sorting, Hash Table |
+| 129 | [Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers/description/) | Binary Tree Traversal (DFS) |
 | 130 | [Surrounded Regions](https://leetcode.com/problems/surrounded-regions/description/) | DFS |
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, Bit Manipulation |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/description/) | Hash Table, Bit Manipulation |
