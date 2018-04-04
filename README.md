@@ -158,6 +158,8 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Linked List, Stack |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | Trie |
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/description/) | Backtracking (DFS), Trie |
+| 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Heap Sort |
+| 237 | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/) | Linked List |
 | 221 | [Maximal Square](https://leetcode.com/problems/maximal-square/description/) | Dynamic Programming |
 | 225 | [Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/description/) | Stack, Queue |
 | 230 | [Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/) | Binary Search Tree |
