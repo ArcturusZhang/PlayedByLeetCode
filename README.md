@@ -129,6 +129,8 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 136 | [Single Number](https://leetcode.com/problems/single-number/description/) | Hash Table, Bit Manipulation |
 | 137 | [Single Number II](https://leetcode.com/problems/single-number-ii/description/) | Hash Table, Bit Manipulation |
 | 138 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/description/) | Linked List |
+| 139 | [Word Break](https://leetcode.com/problems/word-break/description/) | BFS, Dynamic Programming |
+| 140 | [Word Break II](https://leetcode.com/problems/word-break-ii/description/) | cached DFS |
 | 141 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/) | Double Pointers, Hash Table |
 | 142 | [Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/description/) | Double Pointers |
 | 143 | [Reorder List](https://leetcode.com/problems/reorder-list/description/) | Linked List |
