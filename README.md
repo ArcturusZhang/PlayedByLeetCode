@@ -159,6 +159,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 204 | [Count Primes](https://leetcode.com/problems/count-primes/description/) | Sheive Method |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/description/) | Hash Table |
 | 206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/) | Linked List, Stack |
+| 207 | [Course Schedule](https://leetcode.com/problems/course-schedule/description/) | Graph Topological Sort (DFS & BFS), Cyclic Path Detection |
 | 208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/description/) | Trie |
 | 212 | [Word Search II](https://leetcode.com/problems/word-search-ii/description/) | Backtracking (DFS), Trie |
 | 215 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/) | Heap Sort |
@@ -183,5 +184,7 @@ I will put my solutions (of course, the accepted ones) of [Leetcode Problems](ht
 | 416 | [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/description/) | Dynamic Programming |
 | 437 | [Path Sum III](https://leetcode.com/problems/path-sum-iii/description/) | Backtracking (DFS) |
 | 476 | [Number Complement](https://leetcode.com/problems/number-complement/description/) | Bit Manipulation |
+| 507 | [Perfect Number](https://leetcode.com/problems/perfect-number/description/) | Math |
+| 516 | [Longest Palindromic Subsequence](https://leetcode.com/problems/longest-palindromic-subsequence/description/) | Dynamic Programming |
 | 695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/description/) | Backtracking (DFS) |
 | 725 | [Split Linked List in Parts](https://leetcode.com/problems/split-linked-list-in-parts/description/) | Linked List |
