@@ -114,22 +114,6 @@ public final class StdRandom {
         return r;
     }
 
-    ///////////////////////////////////////////////////////////////////////////
-    //  STATIC METHODS BELOW RELY ON JAVA.UTIL.RANDOM ONLY INDIRECTLY VIA
-    //  THE STATIC METHODS ABOVE.
-    ///////////////////////////////////////////////////////////////////////////
-
-    /**
-     * Returns a random real number uniformly in [0, 1).
-     *
-     * @return     a random real number uniformly in [0, 1)
-     * @deprecated Replaced by {@link #uniform()}.
-     */
-    @Deprecated
-    public static double random() {
-        return uniform();
-    }
-
     /**
      * Returns a random integer uniformly in [a, b).
      *
