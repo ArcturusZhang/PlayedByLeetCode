@@ -2,7 +2,8 @@ public abstract class Solution {
     public abstract boolean isMatch(String s, String p);
 
     public static void main(String[] args) {
-        testCases(new Solution1());
+//        testCases(new Solution1());
+        testCases(new Solution2());
     }
 
     private static void testCases(Solution solution) {
