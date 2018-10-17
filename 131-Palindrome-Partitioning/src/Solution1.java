@@ -16,19 +16,20 @@ public class Solution1 extends Solution {
         }
         for (int i = start + 1; i <= end; i++) {
             // determine if s[start, i] is palindrome
-            int lo = start, hi = i - 1;
-            boolean isPalindrome = true;
-            while (lo < hi) {
-                if (s.charAt(lo++) != s.charAt(hi--)) {
-                    isPalindrome = false;
-                    break;
-                }
-            }
-            if (!isPalindrome) continue;
+            if (!isPalindrome(s, start, i - 1)) continue;
             // this substring is palindrome
             current.add(s.substring(start, i));
             partitionCore(s, i, end, result, current);
             current.remove(current.size() - 1);
         }
+    }
+
+    private boolean isPalindrome(String s, int left, int right) {
+        while (left < right) {
+            if (s.charAt(left++) != s.charAt(right--)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
