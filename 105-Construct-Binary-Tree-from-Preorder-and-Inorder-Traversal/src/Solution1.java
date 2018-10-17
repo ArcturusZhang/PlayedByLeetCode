@@ -15,21 +15,23 @@ public class Solution1 extends Solution {
      */
     @Override
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        return buildTreeCore(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+        return buildTreeCore(preorder, inorder, 0, preorder.length, 0, inorder.length);
     }
 
-    private TreeNode buildTreeCore(int[] preorder, int pstart, int pend, int[] inorder, int istart, int iend) {
-        if (pstart > pend) return null;
-        TreeNode node = new TreeNode(preorder[pstart]);
-        int pos = istart;
-        for (int i = istart; i <= iend; i++) {
-            if (inorder[i] == preorder[pstart]) {
-                pos = i;
-                break;
-            }
+    private TreeNode buildTreeCore(int[] preorder, int[] inorder, int preLeft, int preRight, int inLeft, int inRight) {
+        if (preLeft >= preRight || inLeft >= inRight) return null;
+        int rootVal = preorder[preLeft];
+        TreeNode root = new TreeNode(rootVal);
+        // find index of rootVal in inorder array
+        int index = inLeft;
+        for (; index < inRight; index++) {
+            if (inorder[index] == rootVal) break;
         }
-        node.left = buildTreeCore(preorder, pstart + 1, pos - istart + pstart, inorder, istart, pos - 1);
-        node.right = buildTreeCore(preorder, pos - istart + pstart + 1, pend, inorder, pos + 1, iend);
-        return node;
+        int leftNum = index - inLeft, rightNum = inRight - (index + 1);
+        root.left = buildTreeCore(preorder, inorder, preLeft + 1, preLeft + 1 + leftNum,
+                inLeft, index);
+        root.right = buildTreeCore(preorder, inorder, preRight - rightNum, preRight,
+                inRight - rightNum, inRight);
+        return root;
     }
 }
